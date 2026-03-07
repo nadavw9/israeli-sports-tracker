@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#060608">
-<meta name="description" content="All Israeli athletes competing overseas 2025-26 — live stats, radar charts, form guides. NBA, NHL, Soccer.">
-<title>🇮🇱 Israeli Athletes Overseas</title>
+<title>Israeli Athletes Overseas 2025-26</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 :root{--bg:#060608;--s1:#0e0e12;--s2:#141418;--s3:#1c1c22;--bd:rgba(255,255,255,.055);--bd2:rgba(255,255,255,.1);--tx:#f2f2f6;--t2:#9898aa;--t3:#52526a;--gold:#c8a84b;--r:14px;--rs:8px;--tr:all .22s cubic-bezier(.16,1,.3,1)}
@@ -34,31 +33,31 @@ button{cursor:pointer;font-family:inherit;border:none;outline:none}a{color:inher
 #hey{font-family:'DM Mono',monospace;font-size:9px;color:var(--t3);letter-spacing:4px;text-transform:uppercase;margin-bottom:8px;animation:fadUp .5s .05s ease both}
 #hh1{font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,7vw,76px);line-height:.96;letter-spacing:3px;margin-bottom:6px;animation:fadUp .5s .1s ease both}
 #hh1 em{font-style:normal;background:linear-gradient(125deg,#c8a84b,#f5d878 40%,#c8a84b 68%,#8a6b28);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-#hdsc{font-size:12px;color:var(--t2);line-height:1.6;max-width:400px;margin:0 auto 16px;animation:fadUp .5s .15s ease both}
-#hcnt{display:flex;justify-content:center;flex-wrap:wrap;gap:16px;animation:fadUp .5s .2s ease both}
-.hc{text-align:center}.hc-n{font-family:'Bebas Neue',sans-serif;font-size:26px;line-height:1}.hc-l{font-family:'DM Mono',monospace;font-size:8px;color:var(--t3);letter-spacing:2px;margin-top:1px}
-#hc-b .hc-n{color:#E03A3E}#hc-h .hc-n{color:#00B4D8}#hc-s .hc-n{color:#22c55e}
-#swr{max-width:1280px;margin:0 auto;padding:12px 20px}
+#hdsc{font-size:12px;color:var(--t2);line-height:1.6;max-width:440px;margin:0 auto 16px;animation:fadUp .5s .15s ease both}
+#swr{padding:8px 20px 0;max-width:100%}
 #si{width:100%;background:var(--s1);border:1px solid var(--bd2);border-radius:var(--rs);padding:10px 14px;color:var(--tx);font-size:13px;font-family:'Plus Jakarta Sans',sans-serif;outline:none;transition:border-color .2s,box-shadow .2s}
 #si:focus{border-color:var(--gold);box-shadow:0 0 0 2px rgba(200,168,75,.12)}
 #si::placeholder{color:var(--t3)}
-#twr{position:sticky;top:54px;z-index:100;background:rgba(6,6,8,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);padding:0 20px}
-#tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding:6px 0}#tabs::-webkit-scrollbar{display:none}
+#twr{position:sticky;top:54px;z-index:100;background:rgba(6,6,8,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);padding:0}#twr::after{content:"";position:absolute;right:0;top:0;bottom:0;width:40px;background:linear-gradient(to left,rgba(6,6,8,.95),transparent);pointer-events:none;z-index:1}
+#tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding:6px 20px}#tabs::-webkit-scrollbar{display:none}#tabs::after{content:"";flex-shrink:0;width:20px}
 .tb{font-family:'DM Mono',monospace;font-size:10px;padding:7px 14px;border-radius:var(--rs);color:var(--t3);cursor:pointer;transition:var(--tr);letter-spacing:.5px;border:1px solid transparent;white-space:nowrap;background:transparent}
 .tb:hover{color:var(--tx);background:var(--s2)}.tb.a{color:var(--tx);background:var(--tba);border-color:var(--tbc);box-shadow:0 0 14px -4px var(--tbc)}
 #main{max-width:1280px;margin:0 auto;padding:20px 20px 80px}
 .sh{font-family:'DM Mono',monospace;font-size:9px;color:var(--t3);letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:8px}.sh::after{content:'';flex:1;height:1px;background:var(--bd)}
 #grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:10px}
+.no-res{grid-column:1/-1;text-align:center;padding:40px;color:var(--t3);font-family:'DM Mono',monospace;font-size:12px}
 .cd{background:var(--s1);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:var(--tr);animation:fadUp .35s ease both;position:relative}
 .cd::after{content:'';position:absolute;left:0;top:0;bottom:0;width:2.5px;background:var(--pc);opacity:.6;transition:opacity .2s}
+body.heb .cd::after{left:auto;right:0}
 .cd:hover{background:var(--s2);border-color:var(--bd2);transform:translateY(-2px);box-shadow:0 8px 24px -4px rgba(0,0,0,.5)}
 .cd:hover::after{opacity:1}.cd.sl{border-color:var(--pc)!important;box-shadow:0 0 0 1px var(--pc),0 8px 28px -4px rgba(0,0,0,.6)!important}
 .cb{padding:12px 12px 12px 15px}
+body.heb .cb{padding:12px 15px 12px 12px}
 .ch{display:flex;gap:10px;align-items:flex-start;margin-bottom:10px}
 .cph{width:52px;height:52px;border-radius:9px;overflow:hidden;flex-shrink:0;background:var(--s2);position:relative}
-.cph img{width:100%;height:100%;object-fit:cover;object-position:top center;filter:grayscale(15%);transition:filter .3s}.cd:hover .cph img{filter:grayscale(0)}
-.pfb{position:absolute;inset:0;display:none;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:20px;background:var(--s3)}
-.ci{flex:1;min-width:0}
+.cph img{width:100%;height:100%;object-fit:cover;object-position:center 15%;filter:grayscale(15%);transition:filter .3s}.cd:hover .cph img{filter:grayscale(0)}
+.pfb{position:absolute;inset:0;display:none;align-items:center;justify-content:center;background:linear-gradient(145deg,var(--s3) 0%,rgba(0,0,0,.85) 100%);border-radius:9px;flex-direction:column;gap:2px;overflow:hidden}.pfb-svg{width:36px;height:36px;opacity:.25}.pfb-num{font-family:'Bebas Neue',sans-serif;font-size:22px;line-height:1;color:var(--pc);text-shadow:0 0 12px var(--pc)}.pfb-pos{font-family:'DM Mono',monospace;font-size:7px;color:var(--t3);letter-spacing:1px}
+.fbg{position:absolute;bottom:2px;right:2px;font-size:12px;line-height:1;background:rgba(0,0,0,.6);border-radius:3px;padding:1px 2px}.ci{flex:1;min-width:0}
 .cn{font-weight:700;font-size:14px;line-height:1.2;margin-bottom:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .che{font-size:10.5px;color:var(--t2);direction:rtl;margin-bottom:3px}
 .ctm{font-size:10px;color:var(--t3);margin-bottom:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -69,6 +68,7 @@ button{cursor:pointer;font-family:inherit;border:none;outline:none}a{color:inher
 .st{background:var(--s2);border-radius:5px;padding:6px 4px;text-align:center}
 .sv{font-family:'Bebas Neue',sans-serif;font-size:17px;line-height:1;color:var(--tx)}.sv.hi{color:var(--pc)}
 .sl2{font-family:'DM Mono',monospace;font-size:7.5px;color:var(--t3);letter-spacing:1px;margin-top:2px}
+.xst{font-family:'DM Mono',monospace;font-size:9px;color:var(--t3);margin-top:5px;padding:2px 4px}
 .fr{display:flex;align-items:center;gap:4px;margin-top:8px}
 .frl{font-family:'DM Mono',monospace;font-size:7.5px;color:var(--t3);letter-spacing:1px;margin-right:4px}
 .fd{width:13px;height:13px;border-radius:3px;font-family:'DM Mono',monospace;font-size:7px;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
@@ -77,16 +77,16 @@ button{cursor:pointer;font-family:inherit;border:none;outline:none}a{color:inher
 .sb{flex:1;padding:5px;border-radius:6px;font-family:'DM Mono',monospace;font-size:9px;font-weight:600;transition:var(--tr);border:1px solid}
 .sw{background:rgba(37,211,102,.08);color:#25d366;border-color:rgba(37,211,102,.2)}.sw:hover{background:rgba(37,211,102,.18)}
 .stg{background:rgba(0,136,204,.08);color:#0088cc;border-color:rgba(0,136,204,.2)}.stg:hover{background:rgba(0,136,204,.18)}
-#dr{position:fixed;right:0;top:0;height:100vh;width:400px;max-width:100vw;background:var(--s1);border-left:1px solid var(--bd2);z-index:300;overflow-y:auto;transform:translateX(100%);transition:transform .3s cubic-bezier(.16,1,.3,1)}
+#dr{position:fixed;right:0;top:0;height:100vh;width:400px;max-width:100vw;background:var(--s1);border-left:1px solid var(--bd2);z-index:300;overflow-y:auto;transform:translateX(100%);transition:transform .32s cubic-bezier(0.22,1,0.36,1)}
 #dr.op{transform:translateX(0)}
 #dtp{position:sticky;top:0;background:var(--s1);border-bottom:1px solid var(--bd);padding:12px 14px;display:flex;align-items:center;justify-content:space-between;z-index:1}
 #dtn{font-weight:700;font-size:15px}
 #dcl{width:28px;height:28px;border-radius:6px;background:var(--s3);display:flex;align-items:center;justify-content:center;color:var(--t2);font-size:14px;cursor:pointer;transition:var(--tr)}#dcl:hover{background:var(--s2);color:var(--tx)}
 #dbd{padding:14px}
 .dh2{display:flex;gap:12px;margin-bottom:14px}
-.dph{width:88px;height:88px;border-radius:12px;overflow:hidden;background:var(--s2);flex-shrink:0;position:relative}
-.dph img{width:100%;height:100%;object-fit:cover;object-position:top center}
-.pfb2{position:absolute;inset:0;display:none;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:32px;background:var(--s3)}
+.dph{width:140px;height:140px;border-radius:12px;overflow:hidden;background:var(--s2);flex-shrink:0;position:relative}
+.dph img{width:100%;height:100%;object-fit:cover;object-position:center 15%}
+.pfb2{position:absolute;inset:0;display:none;align-items:center;justify-content:center;background:linear-gradient(145deg,var(--s3) 0%,rgba(0,0,0,.85) 100%);flex-direction:column;gap:4px}.pfb2-svg{width:56px;height:56px;opacity:.2}.pfb2-num{font-family:'Bebas Neue',sans-serif;font-size:40px;line-height:1;color:var(--pc);text-shadow:0 0 20px var(--pc)}
 .di{flex:1}.din{font-weight:800;font-size:17px;line-height:1.2;margin-bottom:2px}
 .dihe{font-size:12px;color:var(--t2);direction:rtl;margin-bottom:4px}.dim{font-size:11px;color:var(--t3);line-height:1.7}
 .rwr{display:flex;justify-content:center;margin:8px 0 2px}
@@ -113,389 +113,1383 @@ button{cursor:pointer;font-family:inherit;border:none;outline:none}a{color:inher
 .cpc{display:flex;align-items:center;gap:7px}.cpd{width:6px;height:6px;border-radius:50%}
 #toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--s3);border:1px solid var(--bd2);border-radius:10px;padding:9px 16px;font-family:'DM Mono',monospace;font-size:10.5px;color:var(--tx);transition:transform .3s cubic-bezier(.16,1,.3,1);z-index:600;white-space:nowrap;pointer-events:none}
 #toast.sh{transform:translateX(-50%) translateY(0)}
-footer{border-top:1px solid var(--bd);padding:16px;text-align:center;font-family:'DM Mono',monospace;font-size:9px;color:var(--t3);letter-spacing:2px}
+
+/* LIVE / MANUAL badge */
+.lb{font-family:'DM Mono',monospace;font-size:6.5px;padding:1.5px 5px;border-radius:3px;letter-spacing:.8px;font-weight:700;margin-left:4px;vertical-align:middle}
+.lv-badge{background:rgba(239,68,68,.12);color:#ef4444;border:1px solid rgba(239,68,68,.3)}
+.mn-badge{background:rgba(148,163,184,.08);color:var(--t3);border:1px solid rgba(148,163,184,.15)}
+body.heb .lb{margin-left:0;margin-right:4px}
+/* Skeleton shimmer */
+@keyframes shimmer{0%{background-position:-300px 0}100%{background-position:300px 0}}
+.sk{border-radius:4px;background:linear-gradient(90deg,var(--s2) 25%,var(--s3) 50%,var(--s2) 75%);background-size:600px 100%;animation:shimmer 1.4s infinite linear}
+.sk-card{background:var(--s1);border:1px solid var(--bd);border-radius:var(--r);padding:12px 15px;overflow:hidden}
+.sk-img{width:52px;height:52px;border-radius:9px}
+.sk-line{height:10px;margin-bottom:6px}
+.sk-w60{width:60%}.sk-w40{width:40%}.sk-w80{width:80%}
+.sk-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:10px}
+.sk-st{height:44px;border-radius:5px}
+/* Progress bar */
+#prog-wrap{height:2px;background:var(--s2);overflow:hidden;transition:opacity .4s}
+#prog-bar{height:100%;width:0;background:var(--gold);transition:width .3s ease,background .3s}
+#prog-wrap.done{opacity:0}
+/* Status bar */
+#utx{font-family:'DM Mono',monospace;font-size:9px;color:var(--t3);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.upd-cnt{color:var(--gold)}
+
+/* Last match strip */
+.lm{margin:6px 0 0;padding:6px 8px;background:var(--s2);border-radius:6px;display:flex;align-items:center;gap:6px;border-left:2px solid var(--lmc)}
+.lm-w{--lmc:#22c55e}.lm-l{--lmc:#dc2626}.lm-d{--lmc:#ca8a04}
+.lm-r{font-family:'Bebas Neue',sans-serif;font-size:15px;width:16px;color:var(--lmc);flex-shrink:0}
+.lm-sc{font-family:'DM Mono',monospace;font-size:9px;color:var(--tx);font-weight:700;flex-shrink:0}
+.lm-info{font-family:'DM Mono',monospace;font-size:8px;color:var(--t3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+body.heb .lm{border-left:none;border-right:2px solid var(--lmc)}
+
+#sort-row{display:flex;align-items:center;gap:6px;padding:0 0 8px;overflow-x:auto;scrollbar-width:none}
+#sort-row::-webkit-scrollbar{display:none}
+.sr{font-family:'DM Mono',monospace;font-size:9px;padding:4px 10px;border-radius:99px;border:1px solid var(--bd);color:var(--t3);cursor:pointer;transition:var(--tr);background:transparent;white-space:nowrap}
+.sr:hover{color:var(--tx);border-color:var(--bd2)}.sr.a{color:var(--gold);border-color:var(--gold);background:rgba(200,168,75,.12);font-weight:700}
+#lb-strip{max-width:1280px;margin:0 auto;padding:12px 20px 0}.lb-hdr{font-family:'Bebas Neue',sans-serif;font-size:11px;letter-spacing:2px;color:var(--t3);margin-bottom:8px;display:flex;align-items:center;gap:8px}.lb-hdr::after{content:'';flex:1;height:1px;background:var(--bd)}.lb-row{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}.lb-row::-webkit-scrollbar{display:none}.lb-card{flex:0 0 auto;width:140px;background:var(--s1);border:1px solid var(--bd);border-radius:10px;padding:10px;cursor:pointer;transition:var(--tr);position:relative;overflow:hidden}.lb-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--pc)}.lb-card:hover{border-color:var(--pc);transform:translateY(-2px)}.lb-rank{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--pc);line-height:1;margin-bottom:2px}.lb-name{font-family:'Bebas Neue',sans-serif;font-size:13px;color:var(--tx);line-height:1.1;margin-bottom:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lb-team{font-family:'DM Mono',monospace;font-size:8px;color:var(--t3);margin-bottom:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lb-stat{font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);font-weight:700}.lb-lm{font-family:'DM Mono',monospace;font-size:8px;color:var(--t3);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.xst{font-family:'DM Mono',monospace;font-size:8px;color:var(--t3);margin-top:4px;padding:3px 6px;border-top:1px solid rgba(255,255,255,.04);background:rgba(255,255,255,.02);border-radius:0 0 6px 6px}@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}.live-score-strip{display:flex;align-items:center;gap:5px;padding:4px 8px;margin:5px 0 0;background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.2);border-radius:5px}.live-dot{font-family:'DM Mono',monospace;font-size:7px;color:#ef4444;font-weight:700;animation:pulse 1.2s infinite;flex-shrink:0}.live-score-txt{font-family:'DM Mono',monospace;font-size:8px;color:var(--tx);font-weight:700;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.live-period{font-family:'DM Mono',monospace;font-size:7px;color:var(--t3);flex-shrink:0}.lv-badge.pulsing{animation:pulse .8s infinite}#utx-msg span[style*="ef4444"]{display:inline-block}#dov.vs{display:block}#dov{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:299;display:none}#dov.vs{display:block}footer{border-top:1px solid var(--bd);padding:16px;text-align:center;font-family:'DM Mono',monospace;font-size:9px;color:var(--t3);letter-spacing:2px}
 @media(max-width:640px){#grid{grid-template-columns:1fr}#dr{width:100%;top:auto;bottom:0;height:75vh;border-left:none;border-top:1px solid var(--bd2);transform:translateY(100%)}#dr.op{transform:translateY(0)}}
 @media(max-width:480px){#nav,#twr,#main,#cmp,#swr{padding-left:14px;padding-right:14px}}
-</style>
+.gl-wrap{margin-top:20px;border-top:1px solid rgba(255,255,255,.08);padding-top:4px}.gl-hdr{font-family:DM Mono,monospace;font-size:10px;letter-spacing:.12em;color:rgba(200,168,75,.8);padding:12px 16px 8px;text-transform:uppercase}.gl-loading{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.4);font-size:13px;padding:12px 16px}.gl-spin{width:14px;height:14px;border:2px solid rgba(255,255,255,.1);border-top-color:#c8a84b;border-radius:50%;animation:glspin .7s linear infinite;flex-shrink:0}@keyframes glspin{to{transform:rotate(360deg)}}.gl-empty{color:rgba(255,255,255,.3);font-size:12px;padding:10px 16px;font-style:italic}.gl-row{display:grid;grid-template-columns:60px 1fr 42px;gap:8px;padding:10px 16px;border-bottom:1px solid rgba(255,255,255,.04);align-items:center}.gl-row:last-child{border-bottom:none}.gl-left{display:flex;flex-direction:column;gap:2px}.gl-date{font-size:11px;color:#c8a84b;font-family:DM Mono,monospace;font-weight:600;white-space:nowrap}.gl-match{font-size:11px;color:rgba(255,255,255,.5);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.gl-at{color:rgba(255,255,255,.25)}.gl-mid{display:flex;flex-direction:column;gap:2px}.gl-main{font-size:13px;color:#e0e0e0;line-height:1.4}.gl-main b{color:#fff;font-weight:700}.gl-dot{color:rgba(255,255,255,.25);font-size:10px}.gl-sub{font-size:11px;color:rgba(255,255,255,.3);font-family:DM Mono,monospace}.gl-right{display:flex;flex-direction:column;align-items:flex-end;gap:2px}.gl-res{font-family:DM Mono,monospace;font-size:11px;font-weight:700;padding:2px 5px;border-radius:3px;text-align:center}.gl-w{color:#22c55e;background:rgba(34,197,94,.12)}.gl-l{color:#ef4444;background:rgba(239,68,68,.12)}.gl-d{color:#facc15;background:rgba(250,204,21,.1)}.gl-score{font-size:10px;color:rgba(255,255,255,.3);font-family:DM Mono,monospace;text-align:right}</style>
 </head>
 <body>
 <nav id="nav">
-  <div><div class="bn">🇮🇱 ISRAELI ATHLETES</div><div class="bs">Overseas 2025–26 · v6</div></div>
+  <div><div class="bn">&#127470;&#127473; ISRAELI ATHLETES</div><div class="bs">Overseas 2025-26 &middot; v7</div></div>
   <div id="nav-r">
     <span id="clk"></span>
-    <button class="np lg" id="lbtn" onclick="tLang()">עב</button>
+    <button class="np lg" id="lbtn" onclick="tLang()">&#1506;&#1489;</button>
     <button class="np lv" onclick="refresh()"><span class="ld"></span><span class="lvl">LIVE</span></button>
   </div>
 </nav>
-<div id="ubar"><span id="utx">Loading…</span></div>
+<div id="ubar"><span id="utx"><span id="utx-msg">Loading…</span></span></div><div id="prog-wrap"><div id="prog-bar"></div></div>
 <section id="hero">
-  <span id="hfl">🇮🇱</span>
-  <div id="hey">Season 2025–26 · 6 Leagues · 4 Sports</div>
+  <span id="hfl">&#127470;&#127473;</span>
+  <div id="hey">Season 2025-26 &middot; 9 Sports &middot; 51 Athletes</div>
   <h1 id="hh1">ISRAEL<br><em>OVERSEAS</em></h1>
-  <p id="hdsc">Every Israeli athlete competing professionally abroad. Live stats · Radar charts · Form guides · WhatsApp &amp; Telegram sharing.</p>
-  <div id="hcnt">
-    <div class="hc" id="hc-b"><div class="hc-n">3</div><div class="hc-l">NBA</div></div>
-    <div class="hc" id="hc-h"><div class="hc-n">2</div><div class="hc-l">NHL</div></div>
-    <div class="hc" id="hc-s"><div class="hc-n">18</div><div class="hc-l">Soccer</div></div>
-  </div>
+  <p id="hdsc">Every Israeli athlete competing professionally abroad. Live stats &middot; Radar charts &middot; Form guides &middot; WhatsApp &amp; Telegram sharing.</p>
 </section>
-<div id="swr"><input id="si" type="search" placeholder="Search by name, team, league, position…" autocomplete="off"></div>
-<div id="twr"><div id="tabs"></div></div>
-<main id="main">
-  <div class="sh"><span id="slbl">23 ATHLETES · ALL SPORTS</span></div>
-  <div id="grid"></div>
-</main>
-<section id="cmp"></section>
-<div id="ovl" onclick="cDr()"></div>
-<aside id="dr">
-  <div id="dtp"><span id="dtn">Player</span><button id="dcl" onclick="cDr()">✕</button></div>
-  <div id="dbd"></div>
-</aside>
+
+<div id="twr"><div id="swr"><input id="si" type="search" placeholder="Search players, teams, leagues..." autocomplete="off"></div><div id="tabs"></div></div>
+
+<div id="lb-strip"></div>
+
+<div class="sh"><span id="slbl"></span></div>
+<div id="sort-row"></div>
+<div id="grid"></div>
+
+<div id="cmp"></div>
+
+<div id="dr">
+  <button class="dc" onclick="closeDrawer()" aria-label="Close">&#x2715;</button>
+  <div id="dw"></div>
+</div>
 <div id="toast"></div>
-<footer>🇮🇱 Israeli Athletes Overseas · ספורטאים ישראלים בחו"ל · ESPN API · v6 · Daily refresh</footer>
+<div id="dov" onclick="closeDrawer()"></div>
+
+<footer>
+  <span>Israeli Athletes Overseas &middot; Season 2025-26 &middot; Data via ESPN API</span>
+</footer>
 <script>
-var AP = [{"id":"avdija","sport":"nba","sub":"nba","league":"NBA","lk":null,"name":"Deni Avdija","nameHe":"דני אבדיה","team":"Portland Trail Blazers","pos":"SF","jersey":"8","espnId":"4683021","nbaId":"1630166","pc":"#E03A3E","form":["W","W","L","W","W"],"radar":[96,72,71,60,55,89],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":25.9,"reb":7.3,"ast":7.1,"stl":0.8,"blk":0.6,"tov":2.5,"min":35.2,"gp":58,"gs":58,"oreb":2,"dreb":5.3,"fgp":48.5,"tpp":39.6,"ftp":82.1,"efgp":53.8,"tsp":58.9,"usg":28.6,"ortg":119,"drtg":107}},{"id":"saraf","sport":"nba","sub":"nba","league":"NBA","lk":null,"name":"Ben Saraf","nameHe":"בן שרף","team":"Brooklyn Nets","pos":"PG","jersey":"26","espnId":"5242502","nbaId":"1642879","pc":"#5BB8D4","form":["L","W","L","L","W"],"radar":[42,30,56,50,25,65],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":5.3,"reb":1.6,"ast":2.8,"stl":0.6,"blk":0.2,"tov":1.2,"min":17.8,"gp":32,"gs":6,"fgp":34.2,"tpp":26.3,"ftp":73.5,"efgp":39.3,"tsp":50.7,"usg":14.8,"ortg":104,"drtg":108}},{"id":"wolf","sport":"nba","sub":"nba","league":"NBA","lk":null,"name":"Danny Wolf","nameHe":"דני וולף","team":"Brooklyn Nets","pos":"PF/C","jersey":"27","espnId":"5107173","nbaId":"1642874","pc":"#9DC8D8","form":["L","L","W","W","L"],"radar":[58,55,40,38,42,72],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":9.2,"reb":4.9,"ast":2.4,"stl":0.5,"blk":0.5,"tov":1.4,"min":21.3,"gp":54,"gs":10,"fgp":41.2,"tpp":32.8,"ftp":76.2,"efgp":46.8,"tsp":55.4,"usg":17.6,"ortg":109,"drtg":111}},{"id":"romanov","sport":"nhl","sub":"nhl","league":"NHL","lk":null,"name":"Dor Romanov","nameHe":"דור רומנוב","team":"Carolina Hurricanes","pos":"D","jersey":"28","espnId":"4697940","nbaId":null,"pc":"#CC0000","form":["W","W","W","L","W"],"radar":[40,75,80,65,88,60],"radarL":["G","A","PTS","+/-","BLK","HITS"],"fb":{"goals":3,"assists":15,"points":18,"plusMinus":12,"pim":28,"shots":87,"hits":95,"blocks":112,"gp":62,"toi":"20:14"}},{"id":"zbuium","sport":"nhl","sub":"nhl","league":"NHL","lk":null,"name":"Zeev Buium","nameHe":"זאב ביום","team":"Vancouver Canucks","pos":"D","jersey":"4","espnId":"5206893","nbaId":null,"pc":"#009639","form":["W","L","W","W","L"],"radar":[35,55,65,45,60,50],"radarL":["G","A","PTS","+/-","BLK","HITS"],"fb":{"goals":3,"assists":11,"points":14,"plusMinus":5,"pim":8,"shots":52,"hits":28,"blocks":68,"gp":31,"toi":"19:22"}},{"id":"gloukh","sport":"soccer","sub":"eu","league":"Eredivisie","lk":"ned.1","name":"Oscar Gloukh","nameHe":"אוסקר גלוך","team":"AFC Ajax","pos":"CAM","jersey":"10","espnId":"5048073","nbaId":null,"pc":"#CC0000","form":["W","D","W","W","L"],"radar":[72,72,85,50,62,45],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":5,"assists":5,"apps":22,"shots":38,"shotsOn":17,"passes":712,"keyPasses":48,"dribbles":34,"tackles":18,"interceptions":12,"fouls":14,"yellowCards":2,"mins":1221}},{"id":"solomon","sport":"soccer","sub":"eu","league":"Serie A","lk":"ita.1","name":"Manor Solomon","nameHe":"מנור שלמה","team":"ACF Fiorentina","pos":"LW","jersey":"27","espnId":"272985","nbaId":null,"pc":"#7B0A3D","form":["L","D","W","D","W"],"radar":[55,20,60,70,45,38],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":2,"assists":0,"apps":8,"shots":18,"shotsOn":8,"passes":142,"keyPasses":14,"dribbles":22,"tackles":8,"interceptions":5,"fouls":10,"yellowCards":0,"mins":477}},{"id":"dperetz","sport":"soccer","sub":"eu","league":"Championship","lk":"eng.2","name":"Daniel Peretz","nameHe":"דניאל פרץ","team":"Southampton FC","pos":"GK","jersey":"41","espnId":"305926","nbaId":null,"pc":"#D4333F","form":["L","L","D","L","W"],"radar":[75,60,0,0,0,0],"radarL":["SAVES","CLNS","","","",""],"fb":{"goals":0,"assists":0,"apps":8,"passes":195,"mins":720,"saves":24,"cleanSheets":3}},{"id":"khalili","sport":"soccer","sub":"eu","league":"Belgian Pro","lk":"bel.1","name":"Anan Khalili","nameHe":"ענאן חלאילי","team":"Union Saint-Gilloise","pos":"RM/W","jersey":"7","espnId":"5049812","nbaId":null,"pc":"#FFAA00","form":["W","W","D","W","L"],"radar":[60,85,75,82,55,40],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":4,"assists":6,"apps":24,"shots":44,"shotsOn":18,"passes":582,"keyPasses":36,"dribbles":52,"tackles":28,"interceptions":19,"fouls":22,"yellowCards":4,"mins":1680}},{"id":"dasa","sport":"soccer","sub":"eu","league":"Eredivisie","lk":"ned.1","name":"Eli Dasa","nameHe":"אלי דסה","team":"NEC Nijmegen","pos":"RB","jersey":"2","espnId":"330553","nbaId":null,"pc":"#D00000","form":["L","W","W","D","L"],"radar":[20,48,30,45,55,80],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":0,"assists":3,"apps":15,"shots":12,"shotsOn":4,"passes":398,"keyPasses":10,"dribbles":16,"tackles":36,"interceptions":23,"fouls":9,"yellowCards":3,"mins":1180}},{"id":"weissman","sport":"soccer","sub":"eu","league":"Austrian BL","lk":"aut.1","name":"Shon Weissman","nameHe":"שון וייסמן","team":"Blau-Weiss Linz","pos":"ST","jersey":"9","espnId":"358942","nbaId":null,"pc":"#003082","form":["W","W","W","D","W"],"radar":[88,30,35,55,20,62],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":14,"assists":3,"apps":22,"shots":68,"shotsOn":28,"passes":210,"keyPasses":18,"dribbles":22,"tackles":6,"interceptions":3,"fouls":24,"yellowCards":3,"mins":1650}},{"id":"baltaxa","sport":"soccer","sub":"eu","league":"Austrian BL","lk":"aut.1","name":"Matan Baltaxa","nameHe":"מתן בלטאקסה","team":"Austria Wien","pos":"CB","jersey":"5","espnId":"368892","nbaId":null,"pc":"#5F0F4E","form":["D","W","L","W","W"],"radar":[10,35,20,20,82,75],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":1,"assists":2,"apps":20,"shots":10,"shotsOn":3,"passes":780,"keyPasses":8,"dribbles":6,"tackles":48,"interceptions":32,"fouls":15,"yellowCards":4,"mins":1720}},{"id":"altman","sport":"soccer","sub":"eu","league":"Super League","lk":"gre.1","name":"Omri Altman","nameHe":"עומרי אלטמן","team":"Panathinaikos","pos":"CM","jersey":"8","espnId":"243898","nbaId":null,"pc":"#00711F","form":["W","W","D","W","L"],"radar":[35,50,55,48,55,42],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":2,"assists":4,"apps":18,"shots":22,"shotsOn":8,"passes":620,"keyPasses":22,"dribbles":18,"tackles":30,"interceptions":20,"fouls":18,"yellowCards":3,"mins":1380}},{"id":"ddavid","sport":"soccer","sub":"jpn","league":"J-League","lk":"jpn.1","name":"Dean David","nameHe":"דין דוד","team":"Yokohama F. Marinos","pos":"FW","jersey":"7","espnId":"3945812","nbaId":null,"pc":"#003087","form":["W","W","D","W","L"],"radar":[55,62,50,58,42,32],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":3,"assists":4,"apps":28,"shots":38,"shotsOn":14,"passes":380,"keyPasses":18,"dribbles":28,"tackles":8,"interceptions":5,"fouls":16,"yellowCards":1,"mins":1820}},{"id":"abada","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Liel Abada","nameHe":"ליאל אבדה","team":"Charlotte FC","pos":"FW","jersey":"7","espnId":"312976","nbaId":null,"pc":"#1A85C8","form":["W","W","W","D","W"],"radar":[82,55,65,75,48,35],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":9,"assists":4,"apps":26,"shots":62,"shotsOn":24,"passes":412,"keyPasses":29,"dribbles":44,"tackles":14,"interceptions":9,"fouls":22,"yellowCards":2,"mins":1842}},{"id":"baribo","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Tai Baribo","nameHe":"טאי בריבו","team":"D.C. United","pos":"ST","jersey":"11","espnId":"4395752","nbaId":null,"pc":"#001A57","form":["L","D","W","L","L"],"radar":[40,20,25,35,30,20],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":1,"assists":0,"apps":4,"shots":10,"shotsOn":3,"passes":35,"keyPasses":3,"dribbles":5,"tackles":2,"interceptions":1,"fouls":4,"yellowCards":0,"mins":280}},{"id":"turgeman","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Dor Turgeman","nameHe":"דור טורגמן","team":"NE Revolution","pos":"ST","jersey":"29","espnId":"4886065","nbaId":null,"pc":"#C63323","form":["W","L","W","W","D"],"radar":[55,45,40,50,35,30],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":3,"assists":2,"apps":9,"shots":22,"shotsOn":9,"passes":88,"keyPasses":7,"dribbles":18,"tackles":5,"interceptions":2,"fouls":14,"yellowCards":2,"mins":612}},{"id":"feingold","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Ilay Feingold","nameHe":"אילאי פיינגולד","team":"NE Revolution","pos":"CB","jersey":"2","espnId":"4727482","nbaId":null,"pc":"#C63323","form":["W","L","W","D","W"],"radar":[15,35,25,20,75,88],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":0,"assists":2,"apps":22,"shots":8,"shotsOn":2,"passes":890,"keyPasses":12,"dribbles":8,"tackles":52,"interceptions":34,"fouls":18,"yellowCards":4,"mins":1872}},{"id":"toklomati","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Idan Toklomati","nameHe":"עידן טוקלומטי","team":"Charlotte FC","pos":"FW","jersey":"99","espnId":"4742301","nbaId":null,"pc":"#1A85C8","form":["W","W","D","W","W"],"radar":[75,48,55,70,38,28],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":7,"assists":3,"apps":24,"shots":48,"shotsOn":19,"passes":320,"keyPasses":22,"dribbles":38,"tackles":10,"interceptions":6,"fouls":19,"yellowCards":2,"mins":1540}},{"id":"binyamin","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Ran Binyamin","nameHe":"רן בנימין","team":"FC Dallas","pos":"CM","jersey":"23","espnId":"5290071","nbaId":null,"pc":"#E81F3F","form":["L","D","L","W","L"],"radar":[10,20,35,40,55,50],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":0,"assists":0,"apps":3,"shots":3,"shotsOn":0,"passes":68,"keyPasses":3,"dribbles":5,"tackles":6,"interceptions":3,"fouls":3,"yellowCards":0,"mins":145}},{"id":"nlavi","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Neta Lavi","nameHe":"נטע לביא","team":"Seattle Sounders","pos":"LW","jersey":"33","espnId":"3941093","nbaId":null,"pc":"#5D9732","form":["W","W","L","W","D"],"radar":[60,45,55,65,35,30],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":4,"assists":5,"apps":20,"shots":38,"shotsOn":14,"passes":290,"keyPasses":20,"dribbles":35,"tackles":10,"interceptions":6,"fouls":16,"yellowCards":1,"mins":1320}},{"id":"ycohen","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Yonatan Cohen","nameHe":"יונתן כהן","team":"Colorado Rapids","pos":"AM","jersey":"10","espnId":"3156481","nbaId":null,"pc":"#960A2C","form":["D","W","W","L","W"],"radar":[50,60,65,42,48,30],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":3,"assists":7,"apps":24,"shots":32,"shotsOn":12,"passes":480,"keyPasses":32,"dribbles":24,"tackles":12,"interceptions":8,"fouls":14,"yellowCards":2,"mins":1680}},{"id":"eshamir","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Eden Shamir","nameHe":"עדן שמיר","team":"CF Montréal","pos":"CM","jersey":"8","espnId":"3940991","nbaId":null,"pc":"#004990","form":["L","W","D","W","W"],"radar":[25,45,50,35,62,55],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":1,"assists":4,"apps":18,"shots":14,"shotsOn":4,"passes":560,"keyPasses":18,"dribbles":12,"tackles":38,"interceptions":22,"fouls":16,"yellowCards":3,"mins":1260}}];
-var LV = {}, CK = 'ilv6', TTL = 22*3600*1000;
+var AP = [{"id":"avdija","sport":"nba","sub":"nba","league":"NBA","lk":null,"name":"Deni Avdija","nameHe":"דני אבדיה","team":"Portland Trail Blazers","pos":"SF","jersey":"8","espnId":"4683021","nbaId":"1630166","pc":"#E03A3E","form":["W","W","L","W","W"],"radar":[96,72,71,60,55,89],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":25.9,"reb":7.3,"ast":7.1,"stl":0.8,"blk":0.6,"tov":2.5,"min":35.2,"gp":58,"gs":58,"oreb":2,"dreb":5.3,"fgp":48.5,"tpp":39.6,"ftp":82.1,"efgp":53.8,"tsp":58.9,"usg":28.6,"ortg":119,"drtg":107},"age":23,"lastMatch":{"result":"W","score":"117-108","vs":"Memphis","stat":"28 pts, 8 reb, 6 ast"}},{"id":"saraf","sport":"nba","sub":"nba","league":"NBA","lk":null,"name":"Ben Saraf","nameHe":"בן שרף","team":"Brooklyn Nets","pos":"PG","jersey":"26","espnId":"5242502","nbaId":"1642879","pc":"#5BB8D4","form":["L","W","L","L","W"],"radar":[42,30,56,50,25,65],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":5.3,"reb":1.6,"ast":2.8,"stl":0.6,"blk":0.2,"tov":1.2,"min":17.8,"gp":32,"gs":6,"fgp":34.2,"tpp":26.3,"ftp":73.5,"efgp":39.3,"tsp":50.7,"usg":14.8,"ortg":104,"drtg":108},"age":19,"lastMatch":{"result":"L","score":"108-121","vs":"Cleveland","stat":"7 pts, 3 ast"}},{"id":"wolf","sport":"nba","sub":"nba","league":"NBA","lk":null,"name":"Danny Wolf","nameHe":"דני וולף","team":"Brooklyn Nets","pos":"PF/C","jersey":"27","espnId":"5107173","nbaId":"1642874","pc":"#9DC8D8","form":["L","L","W","W","L"],"radar":[58,55,40,38,42,72],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":9.2,"reb":4.9,"ast":2.4,"stl":0.5,"blk":0.5,"tov":1.4,"min":21.3,"gp":54,"gs":10,"fgp":41.2,"tpp":32.8,"ftp":76.2,"efgp":46.8,"tsp":55.4,"usg":17.6,"ortg":109,"drtg":111},"age":24,"lastMatch":{"result":"L","score":"108-121","vs":"Cleveland","stat":"11 pts, 6 reb"}},{"id":"romanov","sport":"nhl","sub":"nhl","league":"NHL","lk":null,"name":"Dor Romanov","nameHe":"דור רומנוב","team":"Carolina Hurricanes","pos":"D","jersey":"28","espnId":"4697940","nbaId":null,"pc":"#CC0000","form":["W","W","W","L","W"],"radar":[40,75,80,65,88,60],"radarL":["G","A","PTS","+/-","BLK","HITS"],"fb":{"goals":3,"assists":15,"points":18,"plusMinus":12,"pim":28,"shots":87,"hits":95,"blocks":112,"gp":62,"toi":"20:14"},"age":23,"lastMatch":{"result":"W","score":"4-1","vs":"Detroit","stat":"1 ast, 24 min"}},{"id":"zbuium","sport":"nhl","sub":"nhl","league":"NHL","lk":null,"name":"Zeev Buium","nameHe":"זאב ביום","team":"Vancouver Canucks","pos":"D","jersey":"4","espnId":"5206893","nbaId":null,"pc":"#009639","form":["W","L","W","W","L"],"radar":[35,55,65,45,60,50],"radarL":["G","A","PTS","+/-","BLK","HITS"],"fb":{"goals":3,"assists":11,"points":14,"plusMinus":5,"pim":8,"shots":52,"hits":28,"blocks":68,"gp":31,"toi":"19:22"},"age":20,"lastMatch":{"result":"W","score":"5-2","vs":"San Jose","stat":"1 goal, 19 min"}},{"id":"gloukh","sport":"soccer","sub":"eu","league":"Eredivisie","lk":"ned.1","name":"Oscar Gloukh","nameHe":"אוסקר גלוך","team":"AFC Ajax","pos":"CAM","jersey":"10","espnId":"5048073","nbaId":null,"pc":"#CC0000","form":["W","D","W","W","L"],"radar":[72,72,85,50,62,45],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":5,"assists":5,"apps":22,"shots":38,"shotsOn":17,"passes":712,"keyPasses":48,"dribbles":34,"tackles":18,"interceptions":12,"fouls":14,"yellowCards":2,"mins":1221},"age":21,"lastMatch":{"result":"W","score":"3-1","vs":"RKC Waalwijk","stat":"1 goal, 1 ast, 74 min"}},{"id":"solomon","sport":"soccer","sub":"eu","league":"Serie A","lk":"ita.1","name":"Manor Solomon","nameHe":"מנור שלמה","team":"ACF Fiorentina","pos":"LW","jersey":"27","espnId":"272985","nbaId":null,"pc":"#7B0A3D","form":["L","D","W","D","W"],"radar":[55,20,60,70,45,38],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":2,"assists":0,"apps":8,"shots":18,"shotsOn":8,"passes":142,"keyPasses":14,"dribbles":22,"tackles":8,"interceptions":5,"fouls":10,"yellowCards":0,"mins":477},"age":24,"lastMatch":{"result":"D","score":"1-1","vs":"Torino","stat":"56 min"}},{"id":"dperetz","sport":"soccer","sub":"eu","league":"Championship","lk":"eng.2","name":"Daniel Peretz","nameHe":"דניאל פרץ","team":"Southampton FC","pos":"GK","jersey":"41","espnId":"305926","nbaId":null,"pc":"#D4333F","form":["L","L","D","L","W"],"radar":[75,60,0,0,0,0],"radarL":["SAV","CLNS","","","",""],"fb":{"goals":0,"assists":0,"apps":8,"passes":195,"mins":720,"saves":24,"cleanSheets":3},"age":24,"lastMatch":{"result":"L","score":"0-2","vs":"Watford","stat":"5 saves"}},{"id":"khalili","sport":"soccer","sub":"eu","league":"Belgian Pro","lk":"bel.1","name":"Anan Khalili","nameHe":"ענאן חלאילי","team":"Union Saint-Gilloise","pos":"RM","jersey":"7","espnId":"5049812","nbaId":null,"pc":"#FFAA00","form":["W","W","D","W","L"],"radar":[60,85,75,82,55,40],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":4,"assists":6,"apps":24,"shots":44,"shotsOn":18,"passes":582,"keyPasses":36,"dribbles":52,"tackles":28,"interceptions":19,"fouls":22,"yellowCards":4,"mins":1680},"age":23,"lastMatch":{"result":"W","score":"3-0","vs":"Anderlecht","stat":"2 ast, 84 min"}},{"id":"dasa","sport":"soccer","sub":"eu","league":"Eredivisie","lk":"ned.1","name":"Eli Dasa","nameHe":"אלי דסה","team":"NEC Nijmegen","pos":"RB","jersey":"2","espnId":"330553","nbaId":null,"pc":"#D00000","form":["L","W","W","D","L"],"radar":[20,48,30,45,55,80],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":0,"assists":3,"apps":15,"shots":12,"shotsOn":4,"passes":398,"keyPasses":10,"dribbles":16,"tackles":36,"interceptions":23,"fouls":9,"yellowCards":3,"mins":1180},"age":32,"lastMatch":{"result":"D","score":"2-2","vs":"Feyenoord","stat":"90 min"}},{"id":"weissman","sport":"soccer","sub":"eu","league":"Austrian BL","lk":"aut.1","name":"Shon Weissman","nameHe":"שון וייסמן","team":"Blau-Weiss Linz","pos":"ST","jersey":"9","espnId":"358942","nbaId":null,"pc":"#003082","form":["W","W","W","D","W"],"radar":[88,30,35,55,20,62],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":14,"assists":3,"apps":22,"shots":68,"shotsOn":28,"passes":210,"keyPasses":18,"dribbles":22,"tackles":6,"interceptions":3,"fouls":24,"yellowCards":3,"mins":1650},"age":27,"lastMatch":{"result":"W","score":"2-0","vs":"Hartberg","stat":"1 goal, 82 min"}},{"id":"baltaxa","sport":"soccer","sub":"eu","league":"Austrian BL","lk":"aut.1","name":"Matan Baltaxa","nameHe":"מתן בלטאקסה","team":"Austria Wien","pos":"CB","jersey":"5","espnId":"368892","nbaId":null,"pc":"#5F0F4E","form":["D","W","L","W","W"],"radar":[10,35,20,20,82,75],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":1,"assists":2,"apps":20,"shots":10,"shotsOn":3,"passes":780,"keyPasses":8,"dribbles":6,"tackles":48,"interceptions":32,"fouls":15,"yellowCards":4,"mins":1720},"age":26,"lastMatch":{"result":"W","score":"2-1","vs":"Rapid Wien","stat":"90 min"}},{"id":"altman","sport":"soccer","sub":"eu","league":"Super League GR","lk":"gre.1","name":"Omri Altman","nameHe":"עומרי אלטמן","team":"Panathinaikos","pos":"CM","jersey":"8","espnId":"243898","nbaId":null,"pc":"#00711F","form":["W","W","D","W","L"],"radar":[35,50,55,48,55,42],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":2,"assists":4,"apps":18,"shots":22,"shotsOn":8,"passes":620,"keyPasses":22,"dribbles":18,"tackles":30,"interceptions":20,"fouls":18,"yellowCards":3,"mins":1380},"age":29,"lastMatch":{"result":"W","score":"3-0","vs":"Aris","stat":"1 ast, 78 min"}},{"id":"glazer","sport":"soccer","sub":"eu","league":"Bundesliga 2","lk":"ger.2","name":"Omri Glazer","nameHe":"עומרי גלזר","team":"1.FC Heidenheim","pos":"GK","jersey":"1","espnId":"252814","nbaId":null,"pc":"#C8303A","form":["W","D","L","W","W"],"radar":[80,65,0,0,0,0],"radarL":["SAV","CLNS","","","",""],"fb":{"goals":0,"assists":0,"apps":18,"passes":380,"mins":1620,"saves":52,"cleanSheets":5},"age":28,"lastMatch":{"result":"D","score":"1-1","vs":"Kaiserslautern","stat":"4 saves"}},{"id":"lemkin","sport":"soccer","sub":"eu","league":"Belgian Pro","lk":"bel.1","name":"Stav Lemkin","nameHe":"סתיו למקין","team":"Gent","pos":"LB","jersey":"27","espnId":"313070","nbaId":null,"pc":"#004B98","form":["W","W","D","L","W"],"radar":[15,45,30,55,70,72],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":1,"assists":4,"apps":19,"shots":14,"shotsOn":5,"passes":560,"keyPasses":14,"dribbles":28,"tackles":40,"interceptions":22,"fouls":12,"yellowCards":3,"mins":1480},"age":26,"lastMatch":{"result":"W","score":"2-0","vs":"Cercle Bruges","stat":"90 min, 1 ast"}},{"id":"nachmias","sport":"soccer","sub":"eu","league":"Jupiler Pro","lk":"bel.1","name":"Idan Nachmias","nameHe":"עידן נחמיאס","team":"Beerschot","pos":"CB","jersey":"4","espnId":"313169","nbaId":null,"pc":"#7B1FA2","form":["L","L","W","D","L"],"radar":[8,20,15,15,75,80],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":0,"assists":1,"apps":14,"shots":6,"shotsOn":1,"passes":490,"keyPasses":5,"dribbles":4,"tackles":42,"interceptions":28,"fouls":11,"yellowCards":5,"mins":1230},"age":26,"lastMatch":{"result":"L","score":"1-3","vs":"Antwerp","stat":"90 min"}},{"id":"ddavid","sport":"soccer","sub":"jpn","league":"J-League","lk":"jpn.1","name":"Dean David","nameHe":"דין דוד","team":"Yokohama F. Marinos","pos":"FW","jersey":"7","espnId":"3945812","nbaId":null,"pc":"#003087","form":["W","W","D","W","L"],"radar":[55,62,50,58,42,32],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":3,"assists":4,"apps":28,"shots":38,"shotsOn":14,"passes":380,"keyPasses":18,"dribbles":28,"tackles":8,"interceptions":5,"fouls":16,"yellowCards":1,"mins":1820},"age":27,"lastMatch":{"result":"W","score":"2-1","vs":"Cerezo Osaka","stat":"1 goal, 68 min"}},{"id":"abada","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Liel Abada","nameHe":"ליאל אבדה","team":"Charlotte FC","pos":"FW","jersey":"7","espnId":"312976","nbaId":null,"pc":"#1A85C8","form":["W","W","W","D","W"],"radar":[82,55,65,75,48,35],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":9,"assists":4,"apps":26,"shots":62,"shotsOn":24,"passes":412,"keyPasses":29,"dribbles":44,"tackles":14,"interceptions":9,"fouls":22,"yellowCards":2,"mins":1842},"age":23,"lastMatch":{"result":"W","score":"3-2","vs":"Nashville","stat":"1 goal, 1 ast, 83 min"}},{"id":"turgeman","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Dor Turgeman","nameHe":"דור טורגמן","team":"NE Revolution","pos":"ST","jersey":"29","espnId":"4886065","nbaId":null,"pc":"#C63323","form":["W","L","W","W","D"],"radar":[55,45,40,50,35,30],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":3,"assists":2,"apps":9,"shots":22,"shotsOn":9,"passes":88,"keyPasses":7,"dribbles":18,"tackles":5,"interceptions":2,"fouls":14,"yellowCards":2,"mins":612},"age":22,"lastMatch":{"result":"W","score":"2-1","vs":"Orlando","stat":"1 goal, 72 min"}},{"id":"feingold","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Ilay Feingold","nameHe":"אילאי פיינגולד","team":"NE Revolution","pos":"CB","jersey":"2","espnId":"4727482","nbaId":null,"pc":"#C63323","form":["W","L","W","D","W"],"radar":[15,35,25,20,75,88],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":0,"assists":2,"apps":22,"shots":8,"shotsOn":2,"passes":890,"keyPasses":12,"dribbles":8,"tackles":52,"interceptions":34,"fouls":18,"yellowCards":4,"mins":1872},"age":23,"lastMatch":{"result":"W","score":"2-1","vs":"Orlando","stat":"90 min, 1 tackle"}},{"id":"toklomati","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Idan Toklomati","nameHe":"עידן טוקלומטי","team":"Charlotte FC","pos":"FW","jersey":"99","espnId":"4742301","nbaId":null,"pc":"#1A85C8","form":["W","W","D","W","W"],"radar":[75,48,55,70,38,28],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":7,"assists":3,"apps":24,"shots":48,"shotsOn":19,"passes":320,"keyPasses":22,"dribbles":38,"tackles":10,"interceptions":6,"fouls":19,"yellowCards":2,"mins":1540},"age":24,"lastMatch":{"result":"W","score":"3-0","vs":"Atlanta","stat":"1 goal, 76 min"}},{"id":"nlavi","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Neta Lavi","nameHe":"נטע לביא","team":"Seattle Sounders","pos":"LW","jersey":"33","espnId":"3941093","nbaId":null,"pc":"#5D9732","form":["W","W","L","W","D"],"radar":[60,45,55,65,35,30],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":4,"assists":5,"apps":20,"shots":38,"shotsOn":14,"passes":290,"keyPasses":20,"dribbles":35,"tackles":10,"interceptions":6,"fouls":16,"yellowCards":1,"mins":1320},"age":26,"lastMatch":{"result":"D","score":"1-1","vs":"Portland","stat":"63 min"}},{"id":"ycohen","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Yonatan Cohen","nameHe":"יונתן כהן","team":"Colorado Rapids","pos":"AM","jersey":"10","espnId":"3156481","nbaId":null,"pc":"#960A2C","form":["D","W","W","L","W"],"radar":[50,60,65,42,48,30],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":3,"assists":7,"apps":24,"shots":32,"shotsOn":12,"passes":480,"keyPasses":32,"dribbles":24,"tackles":12,"interceptions":8,"fouls":14,"yellowCards":2,"mins":1680},"age":29,"lastMatch":{"result":"L","score":"0-2","vs":"LAFC","stat":"1 ast, 80 min"}},{"id":"eshamir","sport":"soccer","sub":"mls","league":"MLS","lk":"usa.1","name":"Eden Shamir","nameHe":"עדן שמיר","team":"CF Montreal","pos":"CM","jersey":"8","espnId":"3940991","nbaId":null,"pc":"#004990","form":["L","W","D","W","W"],"radar":[25,45,50,35,62,55],"radarL":["G","A","KP","DRB","PASS","TKLS"],"fb":{"goals":1,"assists":4,"apps":18,"shots":14,"shotsOn":4,"passes":560,"keyPasses":18,"dribbles":12,"tackles":38,"interceptions":22,"fouls":16,"yellowCards":3,"mins":1260},"age":25,"lastMatch":{"result":"W","score":"2-1","vs":"Toronto","stat":"74 min"}},{"id":"levy_g","sport":"bball","sub":"bball","league":"LEB Oro","lk":null,"name":"Gilead Levy","nameHe":"גילעד לוי","team":"Breogan","pos":"SG","jersey":"5","espnId":null,"nbaId":null,"pc":"#CC0000","form":["W","L","W","W","L"],"radar":[55,40,35,45,30,50],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":10.2,"reb":3.1,"ast":1.8,"stl":0.9,"blk":0.2,"fgp":42,"tpp":35,"gp":22},"photoUrl":"https://ui-avatars.com/api/?name=Gilead%20Levy&background=FF6B35&color=fff&size=200&bold=true&font-size=0.4","age":27,"lastMatch":{"result":"W","score":"78-70","vs":"Estudiantes","stat":"12 pts, 4 reb"}},{"id":"yaakov_n","sport":"bball","sub":"bball","league":"FEB Liga","lk":null,"name":"Noam Yaakov","nameHe":"נועם יעקב","team":"Manresa","pos":"SG/SF","jersey":"14","espnId":null,"nbaId":null,"pc":"#003082","form":["W","W","D","W","L"],"radar":[48,38,30,50,25,60],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":8.8,"reb":2.9,"ast":1.4,"stl":1.1,"blk":0.2,"fgp":44,"tpp":37,"gp":24},"photoUrl":"https://ui-avatars.com/api/?name=Noam%20Yaakov&background=FF6B35&color=fff&size=200&bold=true&font-size=0.4","age":26,"lastMatch":{"result":"W","score":"88-82","vs":"Gran Canaria","stat":"10 pts, 3 ast"}},{"id":"sternberg_g","sport":"bball","sub":"bball","league":"Bundesliga","lk":null,"name":"Gal Sternberg","nameHe":"גל שטרנברג","team":"Ratiopharm Ulm","pos":"PF","jersey":"13","espnId":null,"nbaId":null,"pc":"#FF6B00","form":["L","W","W","L","W"],"radar":[42,55,25,35,48,52],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":7.4,"reb":4.6,"ast":1.2,"stl":0.6,"blk":0.8,"fgp":45,"tpp":30,"gp":20},"photoUrl":"https://ui-avatars.com/api/?name=Gal%20Sternberg&background=FF6B35&color=fff&size=200&bold=true&font-size=0.4","age":28,"lastMatch":{"result":"L","score":"72-85","vs":"Bayern Munich","stat":"8 pts, 5 reb"}},{"id":"tyus_a","sport":"bball","sub":"bball","league":"LKL Lithuania","lk":null,"name":"Alex Tyus","nameHe":"אלכס טיוס","team":"Zalgiris","pos":"C","jersey":"42","espnId":null,"nbaId":null,"pc":"#007A4D","form":["W","W","W","L","W"],"radar":[38,68,20,30,62,55],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":6.8,"reb":6.4,"ast":1,"stl":0.5,"blk":1.2,"fgp":52,"tpp":0,"gp":26},"photoUrl":"https://ui-avatars.com/api/?name=Alex%20Tyus&background=FF6B35&color=fff&size=200&bold=true&font-size=0.4","age":34,"lastMatch":{"result":"W","score":"91-78","vs":"Rytas","stat":"9 pts, 7 reb"}},{"id":"trushkin_o","sport":"bball","sub":"bball","league":"Pro A France","lk":null,"name":"Oren Trushkin","nameHe":"אורן טרושקין","team":"Paris Basketball","pos":"PG","jersey":"5","espnId":null,"nbaId":null,"pc":"#003399","form":["W","D","W","W","L"],"radar":[62,30,58,55,20,55],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":12.4,"reb":2.4,"ast":4.8,"stl":1.3,"blk":0.2,"fgp":40,"tpp":36,"gp":18},"photoUrl":"https://ui-avatars.com/api/?name=Oren%20Trushkin&background=FF6B35&color=fff&size=200&bold=true&font-size=0.4","age":30,"lastMatch":{"result":"W","score":"83-79","vs":"Monaco","stat":"14 pts, 6 ast"}},{"id":"zilber_e","sport":"bball","sub":"bball","league":"Eurocup","lk":null,"name":"Etan Zilberstein","nameHe":"איתן זילברשטיין","team":"Bourg-en-Bresse","pos":"SG","jersey":"22","espnId":null,"nbaId":null,"pc":"#E30613","form":["W","L","W","D","W"],"radar":[50,32,28,42,18,58],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":9,"reb":2.8,"ast":1.9,"stl":0.8,"blk":0.1,"fgp":43,"tpp":38,"gp":21},"photoUrl":"https://ui-avatars.com/api/?name=Etan%20Zilberstein&background=FF6B35&color=fff&size=200&bold=true&font-size=0.4","age":29,"lastMatch":{"result":"W","score":"86-80","vs":"Dijon","stat":"11 pts, 3 ast"}},{"id":"zilber_y","sport":"bball","sub":"bball","league":"Pro A France","lk":null,"name":"Yonatan Zilberstein","nameHe":"יונתן זילברשטיין","team":"Elan Chalon","pos":"SF","jersey":"11","espnId":null,"nbaId":null,"pc":"#F04E23","form":["L","W","L","W","W"],"radar":[45,40,30,40,25,50],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":8.2,"reb":3.4,"ast":1.5,"stl":0.7,"blk":0.3,"fgp":41,"tpp":35,"gp":22},"photoUrl":"https://ui-avatars.com/api/?name=Yonatan%20Zilberstein&background=FF6B35&color=fff&size=200&bold=true&font-size=0.4","age":27,"lastMatch":{"result":"L","score":"74-88","vs":"Limoges","stat":"9 pts, 4 reb"}},{"id":"orland_o","sport":"bball","sub":"bball","league":"Liga ACB","lk":null,"name":"Omri Orland","nameHe":"עומרי אורלנד","team":"UCAM Murcia","pos":"PG","jersey":"8","espnId":null,"nbaId":null,"pc":"#FF6600","form":["W","W","L","W","D"],"radar":[55,28,52,60,15,52],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":11,"reb":2.2,"ast":4.2,"stl":1.2,"blk":0.1,"fgp":42,"tpp":37,"gp":20},"photoUrl":"https://ui-avatars.com/api/?name=Omri%20Orland&background=FF6B35&color=fff&size=200&bold=true&font-size=0.4","age":30,"lastMatch":{"result":"W","score":"85-76","vs":"Bilbao","stat":"13 pts, 5 ast"}},{"id":"lederman_s","sport":"bball","sub":"bball","league":"VTB United","lk":null,"name":"Shlav Lederman","nameHe":"שלו לדרמן","team":"Astana","pos":"SG","jersey":"7","espnId":null,"nbaId":null,"pc":"#0070B8","form":["L","W","W","W","L"],"radar":[48,30,25,38,20,55],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":9.4,"reb":2.6,"ast":1.8,"stl":0.9,"blk":0.1,"fgp":44,"tpp":39,"gp":19},"photoUrl":"https://ui-avatars.com/api/?name=Shlav%20Lederman&background=FF6B35&color=fff&size=200&bold=true&font-size=0.4","age":25,"lastMatch":{"result":"W","score":"92-85","vs":"Astana-2","stat":"10 pts, 2 reb"}},{"id":"artman_g","sport":"bball","sub":"bball","league":"Legabasket","lk":null,"name":"Guy Artman","nameHe":"גיא ארטמן","team":"Trieste","pos":"SF","jersey":"33","espnId":null,"nbaId":null,"pc":"#FF0000","form":["W","L","D","W","W"],"radar":[40,42,22,35,30,48],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":7.2,"reb":3.8,"ast":1.2,"stl":0.6,"blk":0.5,"fgp":40,"tpp":33,"gp":18},"photoUrl":"https://ui-avatars.com/api/?name=Guy%20Artman&background=FF6B35&color=fff&size=200&bold=true&font-size=0.4","age":31,"lastMatch":{"result":"L","score":"68-75","vs":"Trento","stat":"8 pts, 4 reb"}},{"id":"yael_m","sport":"wbball","sub":"wbball","league":"WNBA","lk":null,"name":"Maayan Yael","nameHe":"מעיין יעל","team":"Connecticut Sun","pos":"G","jersey":"4","espnId":null,"nbaId":null,"pc":"#008C44","form":["W","W","L","W","W"],"radar":[60,35,50,55,20,58],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":8.4,"reb":2.8,"ast":3.2,"stl":1,"blk":0.2,"fgp":41,"tpp":35,"gp":28},"photoUrl":"https://ui-avatars.com/api/?name=Maayan%20Yael&background=FF69B4&color=fff&size=200&bold=true&font-size=0.4","age":26,"lastMatch":{"result":"W","score":"88-72","vs":"Dallas Wings","stat":"9 pts, 4 ast"}},{"id":"muhrama_s","sport":"wbball","sub":"wbball","league":"Euroleague W","lk":null,"name":"Sirin Muhrama","nameHe":"סירין מחרמה","team":"Galatasaray","pos":"G/F","jersey":"7","espnId":null,"nbaId":null,"pc":"#E30613","form":["W","L","W","D","W"],"radar":[52,40,40,48,25,52],"radarL":["PTS","REB","AST","STL","BLK","FG%"],"fb":{"pts":9.8,"reb":3.6,"ast":2.8,"stl":1.1,"blk":0.3,"fgp":43,"tpp":36,"gp":22},"photoUrl":"https://ui-avatars.com/api/?name=Sirin%20Muhrama&background=FF69B4&color=fff&size=200&bold=true&font-size=0.4","age":25,"lastMatch":{"result":"W","score":"92-80","vs":"Sopron","stat":"11 pts, 3 ast"}},{"id":"shamir_y","sport":"handball","sub":"handball","league":"Bundelsiga HB","lk":null,"name":"Yehav Shamir","nameHe":"יהב שמיר","team":"Rhein-Neckar Lowen","pos":"CB","jersey":"16","espnId":null,"nbaId":null,"pc":"#E30613","form":["W","W","L","W","W"],"radar":[70,60,50,30,0,0],"radarL":["G","AST","SAVES","7M","",""],"fb":{"goals":48,"assists":22,"saves":0,"apps":18,"sevenm":8,"yellowCards":2},"photoUrl":"https://ui-avatars.com/api/?name=Yehav%20Shamir&background=A855F7&color=fff&size=200&bold=true&font-size=0.4","age":28,"lastMatch":{"result":"W","score":"35-28","vs":"Wetzlar","stat":"7 goals"}},{"id":"feld_t","sport":"handball","sub":"handball","league":"Starligue FR","lk":null,"name":"Tal Feld","nameHe":"טל פלד","team":"Montpellier HB","pos":"GK","jersey":"1","espnId":null,"nbaId":null,"pc":"#FF6600","form":["W","D","W","W","L"],"radar":[0,0,85,70,0,0],"radarL":["G","AST","SAVES","7M","",""],"fb":{"goals":0,"assists":0,"saves":142,"apps":20,"sevenm":0,"yellowCards":1},"photoUrl":"https://ui-avatars.com/api/?name=Tal%20Feld&background=A855F7&color=fff&size=200&bold=true&font-size=0.4","age":30,"lastMatch":{"result":"W","score":"35-28","vs":"Wetzlar","stat":"11 saves"}},{"id":"cohen_n","sport":"handball","sub":"handball","league":"EHF Champions","lk":null,"name":"Nadav Cohen","nameHe":"נדב כהן","team":"Barcelona","pos":"RW","jersey":"21","espnId":null,"nbaId":null,"pc":"#A50044","form":["W","W","W","W","L"],"radar":[75,45,0,55,0,0],"radarL":["G","AST","SAVES","7M","",""],"fb":{"goals":62,"assists":30,"saves":0,"apps":22,"sevenm":12,"yellowCards":1},"photoUrl":"https://ui-avatars.com/api/?name=Nadav%20Cohen&background=A855F7&color=fff&size=200&bold=true&font-size=0.4","age":27,"lastMatch":{"result":"W","score":"41-30","vs":"Aalborg","stat":"9 goals"}},{"id":"lombroso_y","sport":"handball","sub":"handball","league":"Handball BL","lk":null,"name":"Yoav Lombroso","nameHe":"יואב לומברוזו","team":"Flensburg","pos":"LW","jersey":"19","espnId":null,"nbaId":null,"pc":"#003082","form":["W","L","W","D","W"],"radar":[60,40,0,45,0,0],"radarL":["G","AST","SAVES","7M","",""],"fb":{"goals":44,"assists":18,"saves":0,"apps":19,"sevenm":6,"yellowCards":3},"photoUrl":"https://ui-avatars.com/api/?name=Yoav%20Lombroso&background=A855F7&color=fff&size=200&bold=true&font-size=0.4","age":26,"lastMatch":{"result":"W","score":"39-31","vs":"Hannover-Burgdorf","stat":"6 goals"}},{"id":"dayan_y","sport":"handball","sub":"handball","league":"Liga ASOBAL","lk":null,"name":"Yonatan Dayan","nameHe":"יונתן דיין","team":"Balonmano Bidasoa","pos":"CB","jersey":"10","espnId":null,"nbaId":null,"pc":"#0047AB","form":["L","W","L","W","W"],"radar":[55,35,0,40,0,0],"radarL":["G","AST","SAVES","7M","",""],"fb":{"goals":38,"assists":25,"saves":0,"apps":20,"sevenm":9,"yellowCards":2},"photoUrl":"https://ui-avatars.com/api/?name=Yonatan%20Dayan&background=A855F7&color=fff&size=200&bold=true&font-size=0.4","age":29,"lastMatch":{"result":"L","score":"28-32","vs":"Granollers","stat":"4 goals"}},{"id":"oliel_y","sport":"tennis","sub":"tennis","league":"ATP Tour","lk":null,"name":"Yishai Oliel","nameHe":"ישי עוליאל","team":"ATP","pos":"Singles","jersey":null,"espnId":null,"nbaId":null,"pc":"#27AE60","form":["W","L","W","W","L"],"radar":[65,55,70,60,0,0],"radarL":["1st Sv","Aces","WinPct","BP Save","",""],"fb":{"atp_rank":130,"wins":22,"losses":14,"titles":0,"aces":85,"df":28},"photoUrl":"https://ui-avatars.com/api/?name=Yishai%20Oliel&background=FACC15&color=fff&size=200&bold=true&font-size=0.4","age":22,"lastMatch":{"result":"W","score":"7-6 6-4","vs":"Thompson (Challenger)","stat":"5 aces"}},{"id":"kamchi_o","sport":"tennis","sub":"tennis","league":"ATP Tour","lk":null,"name":"Ural Kamchi","nameHe":"אוראל קמחי","team":"ATP","pos":"Singles","jersey":null,"espnId":null,"nbaId":null,"pc":"#2980B9","form":["W","W","L","W","D"],"radar":[58,62,65,55,0,0],"radarL":["1st Sv","Aces","WinPct","BP Save","",""],"fb":{"atp_rank":210,"wins":18,"losses":12,"titles":0,"aces":72,"df":22},"photoUrl":"https://ui-avatars.com/api/?name=Ural%20Kamchi&background=FACC15&color=fff&size=200&bold=true&font-size=0.4","age":24,"lastMatch":{"result":"L","score":"4-6 6-7","vs":"Cerundolo (ATP)","stat":"2 aces"}},{"id":"zuckerman_d","sport":"tennis","sub":"tennis","league":"ATP Challenger","lk":null,"name":"Daniel Zuckerman","nameHe":"דניאל צוקרמן","team":"ATP","pos":"Singles","jersey":null,"espnId":null,"nbaId":null,"pc":"#8E44AD","form":["L","W","W","L","W"],"radar":[55,48,60,52,0,0],"radarL":["1st Sv","Aces","WinPct","BP Save","",""],"fb":{"atp_rank":280,"wins":15,"losses":11,"titles":0,"aces":58,"df":18},"photoUrl":"https://ui-avatars.com/api/?name=Daniel%20Zuckerman&background=FACC15&color=fff&size=200&bold=true&font-size=0.4","age":26,"lastMatch":{"result":"W","score":"6-2 6-3","vs":"Burruchaga (Challenger)","stat":"3 aces"}},{"id":"glushko_l","sport":"tennis","sub":"tennis","league":"WTA Tour","lk":null,"name":"Lina Glushko","nameHe":"לינה גלושקו","team":"WTA","pos":"Singles","jersey":null,"espnId":null,"nbaId":null,"pc":"#E91E63","form":["W","L","W","W","W"],"radar":[68,52,72,60,0,0],"radarL":["1st Sv","Aces","WinPct","BP Save","",""],"fb":{"wta_rank":95,"wins":28,"losses":18,"titles":1,"aces":62,"df":20},"photoUrl":"https://ui-avatars.com/api/?name=Lina%20Glushko&background=FACC15&color=fff&size=200&bold=true&font-size=0.4","age":32,"lastMatch":{"result":"W","score":"6-4 6-2","vs":"Wang (WTA Doha)","stat":"2 aces, 72 min"}},{"id":"laron_m","sport":"tennis","sub":"tennis","league":"WTA Tour","lk":null,"name":"Maayan Laron","nameHe":"מעיין לרון","team":"WTA","pos":"Singles","jersey":null,"espnId":null,"nbaId":null,"pc":"#FF5722","form":["W","W","D","L","W"],"radar":[62,45,68,55,0,0],"radarL":["1st Sv","Aces","WinPct","BP Save","",""],"fb":{"wta_rank":145,"wins":24,"losses":15,"titles":0,"aces":48,"df":16},"photoUrl":"https://ui-avatars.com/api/?name=Maayan%20Laron&background=FACC15&color=fff&size=200&bold=true&font-size=0.4","age":28,"lastMatch":{"result":"L","score":"3-6 4-6","vs":"Swiatek (WTA Doha)","stat":"1 ace"}},{"id":"buchnik_m","sport":"tennis","sub":"tennis","league":"WTA Challenger","lk":null,"name":"Mika Buchnik","nameHe":"מיקה בוכניק","team":"WTA","pos":"Singles","jersey":null,"espnId":null,"nbaId":null,"pc":"#00BCD4","form":["L","W","W","L","W"],"radar":[58,40,62,50,0,0],"radarL":["1st Sv","Aces","WinPct","BP Save","",""],"fb":{"wta_rank":188,"wins":20,"losses":14,"titles":0,"aces":38,"df":12},"photoUrl":"https://ui-avatars.com/api/?name=Mika%20Buchnik&background=FACC15&color=fff&size=200&bold=true&font-size=0.4","age":25,"lastMatch":{"result":"W","score":"6-3 7-5","vs":"Linette (ITF)","stat":"4 aces"}},{"id":"edelman_a","sport":"winter","sub":"winter","league":"Snowboarding","lk":null,"name":"Adam Edelman","nameHe":"אדם אדלמן","team":"ISR Olympic Team","pos":"Snowboard SBX","jersey":null,"espnId":null,"nbaId":null,"pc":"#00B4D8","form":["W","L","W","L","W"],"radar":[72,0,0,0,0,0],"radarL":["World Rank","","","","",""],"fb":{"world_rank":18,"events":8,"podiums":2,"season":"2025-26"},"photoUrl":"https://ui-avatars.com/api/?name=Adam%20Edelman&background=00B4D8&color=fff&size=200&bold=true&font-size=0.4","age":32,"lastMatch":{"result":"W","score":"-","vs":"World Cup SBX","stat":"3rd place"}},{"id":"firestone_j","sport":"winter","sub":"winter","league":"Freestyle Skiing","lk":null,"name":"Jared Firestone","nameHe":"ג'ראד פיירסטון","team":"ISR Olympic Team","pos":"Moguls","jersey":null,"espnId":null,"nbaId":null,"pc":"#4CAF50","form":["W","W","L","W","D"],"radar":[65,0,0,0,0,0],"radarL":["World Rank","","","","",""],"fb":{"world_rank":22,"events":10,"podiums":1,"season":"2025-26"},"photoUrl":"https://ui-avatars.com/api/?name=Jared%20Firestone&background=00B4D8&color=fff&size=200&bold=true&font-size=0.4","age":26,"lastMatch":{"result":"W","score":"-","vs":"World Cup Moguls","stat":"5th place"}},{"id":"seniuk_m","sport":"winter","sub":"winter","league":"Cross-Country Ski","lk":null,"name":"Maria Seniuk","nameHe":"מריה סניוק","team":"ISR Olympic Team","pos":"Biathlon","jersey":null,"espnId":null,"nbaId":null,"pc":"#FF9800","form":["L","W","W","L","W"],"radar":[55,0,0,0,0,0],"radarL":["World Rank","","","","",""],"fb":{"world_rank":41,"events":12,"podiums":0,"season":"2025-26"},"photoUrl":"https://ui-avatars.com/api/?name=Maria%20Seniuk&background=00B4D8&color=fff&size=200&bold=true&font-size=0.4","age":28,"lastMatch":{"result":"L","score":"-","vs":"World Cup Biathlon","stat":"42nd"}},{"id":"soloush_n","sport":"winter","sub":"winter","league":"Alpine Skiing","lk":null,"name":"Noa Soloush","nameHe":"נועה סולוש","team":"ISR Olympic Team","pos":"Slalom","jersey":null,"espnId":null,"nbaId":null,"pc":"#9C27B0","form":["W","L","W","W","L"],"radar":[62,0,0,0,0,0],"radarL":["World Rank","","","","",""],"fb":{"world_rank":35,"events":9,"podiums":1,"season":"2025-26"},"photoUrl":"https://ui-avatars.com/api/?name=Noa%20Soloush&background=00B4D8&color=fff&size=200&bold=true&font-size=0.4","age":23,"lastMatch":{"result":"W","score":"-","vs":"World Cup Slalom","stat":"18th place"}}];
+var LV = {}, CK = 'ilv8', TTL = 22*3600*1000;
 var ASP = 'all', SEL = null, SQ = '', HEB = false;
 
-// ── radar SVG ────────────────────────────────────────────────────────────────
+// Radar SVG
 function radar(vals, lbls, color, sz) {
   sz = sz || 130;
-  var cx = sz/2, cy = sz/2, r = sz*0.38, n = vals.length;
-  var o = ['<svg width="'+sz+'" height="'+sz+'" viewBox="0 0 '+sz+' '+sz+'">'];
-  [0.25,0.5,0.75,1].forEach(function(rg) {
-    var rp = [];
-    for(var i=0;i<n;i++){var a=(i/n)*2*Math.PI-Math.PI/2;rp.push((cx+r*rg*Math.cos(a)).toFixed(1)+','+(cy+r*rg*Math.sin(a)).toFixed(1));}
-    o.push('<polygon points="'+rp.join(' ')+'" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="1"/>');
-  });
-  for(var i=0;i<n;i++){var a=(i/n)*2*Math.PI-Math.PI/2;o.push('<line x1="'+cx+'" y1="'+cy+'" x2="'+(cx+r*Math.cos(a)).toFixed(1)+'" y2="'+(cy+r*Math.sin(a)).toFixed(1)+'" stroke="rgba(255,255,255,.06)" stroke-width="1"/>');}
-  var vp=[];for(var i=0;i<n;i++){var a=(i/n)*2*Math.PI-Math.PI/2;var v=(vals[i]||0)/100;vp.push((cx+r*v*Math.cos(a)).toFixed(1)+','+(cy+r*v*Math.sin(a)).toFixed(1));}
-  o.push('<polygon points="'+vp.join(' ')+'" fill="'+color+'28" stroke="'+color+'" stroke-width="1.5" stroke-linejoin="round"/>');
-  for(var i=0;i<n;i++){
-    var a=(i/n)*2*Math.PI-Math.PI/2;var v=(vals[i]||0)/100;
-    var dx=(cx+r*v*Math.cos(a)).toFixed(1);var dy=(cy+r*v*Math.sin(a)).toFixed(1);
-    o.push('<circle cx="'+dx+'" cy="'+dy+'" r="2.5" fill="'+color+'"/>');
-    if(lbls&&lbls[i]){var lx=(cx+(r+13)*Math.cos(a)).toFixed(1);var ly=(cy+(r+13)*Math.sin(a)).toFixed(1);o.push('<text x="'+lx+'" y="'+ly+'" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="6.5" fill="rgba(255,255,255,.35)">'+lbls[i]+'</text>');}
-  }
-  o.push('</svg>');return o.join('');
-}
-
-// ── cache ────────────────────────────────────────────────────────────────────
-function saveC(){try{localStorage.setItem(CK,JSON.stringify({ts:Date.now(),d:LV}));}catch(e){}}
-function loadC(){try{var r=JSON.parse(localStorage.getItem(CK)||'{}');if(r.d&&Date.now()-r.ts<TTL){LV=r.d;return true;}}catch(e){}return false;}
-
-// ── toast ────────────────────────────────────────────────────────────────────
-function toast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('sh');setTimeout(function(){t.classList.remove('sh');},2600);}
-
-// ── clock ────────────────────────────────────────────────────────────────────
-setInterval(function(){var e=document.getElementById('clk');if(e)e.textContent=new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'});},1000);
-
-// ── stat helpers ─────────────────────────────────────────────────────────────
-function gs(id,k){var lv=LV[id];if(lv&&lv[k]!=null)return lv[k];var p=AP.find(function(x){return x.id===id;});return p&&p.fb?p.fb[k]:null;}
-function fmt(v,d){if(v==null||v==='')return '—';var n=parseFloat(v);return isNaN(n)?String(v):n.toFixed(d!=null?d:1);}
-function fi(v){return v==null?'—':Math.round(parseFloat(v)||0);}
-function pm(v){var n=parseFloat(v);return isNaN(n)?'—':(n>0?'+':'')+n.toFixed(0);}
-
-// ── photo ────────────────────────────────────────────────────────────────────
-function pUrl(p){
-  if(p.sport==='nba'&&p.nbaId)return 'https://cdn.nba.com/headshots/nba/latest/1040x760/'+p.nbaId+'.png';
-  if(p.sport==='nhl')return 'https://a.espncdn.com/i/headshots/nhl/players/full/'+p.espnId+'.png';
-  return 'https://a.espncdn.com/i/headshots/soccer/players/full/'+p.espnId+'.png';
-}
-function onE(img,pid,big){
-  var p=AP.find(function(x){return x.id===pid;});if(!p)return;
-  if(p.sport==='nba'&&img.src.indexOf('cdn.nba')>-1){img.src='https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/'+p.espnId+'.png&w=350&h=254';return;}
-  img.style.display='none';
-  var fb=img.parentNode.querySelector(big?'.pfb2':'.pfb');
-  if(fb){fb.style.display='flex';fb.style.color=p.pc;fb.textContent='#'+p.jersey;}
-}
-
-// ── ESPN fetch ───────────────────────────────────────────────────────────────
-async function eg(u){try{var r=await fetch(u);return r.ok?r.json():null;}catch(e){return null;}}
-async function fOne(p){
-  var d,cats=[],t={};
-  try{
-    if(p.sport==='nba'){
-      d=await eg('https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/'+p.espnId+'/overview');
-      cats=(d&&d.athlete&&d.athlete.statistics&&d.athlete.statistics.splits&&d.athlete.statistics.splits.categories)||[];
-      for(var i=0;i<cats.length;i++){var ss=cats[i].stats||[];for(var j=0;j<ss.length;j++){
-        var n=(ss[j].name||'').toLowerCase().replace(/[^a-z]/g,'');var v=parseFloat(ss[j].value);if(isNaN(v))continue;
-        var M={avgpoints:'pts',avgrebounds:'reb',avgassists:'ast',avgsteals:'stl',avgblocks:'blk',avgturnover:'tov',avgminutes:'min',gamesplayed:'gp',gamesstarted:'gs',avgoffensiverebounds:'oreb',avgdefensiverebounds:'dreb'};
-        if(M[n])t[M[n]]=v;
-        if(n==='fieldgoalpercentage')t.fgp=+(v*100).toFixed(1);
-        if(n==='threepointfieldgoalpercentage')t.tpp=+(v*100).toFixed(1);
-        if(n==='freethrowpercentage')t.ftp=+(v*100).toFixed(1);
-      }}
-      if(t.pts){LV[p.id]=Object.assign({},p.fb,t);return true;}
-    }else if(p.sport==='nhl'){
-      d=await eg('https://site.web.api.espn.com/apis/site/v2/sports/hockey/nhl/athletes/'+p.espnId+'/statistics');
-      cats=(d&&d.splits&&d.splits.categories)||[];
-      for(var i=0;i<cats.length;i++){var ss=cats[i].stats||[];for(var j=0;j<ss.length;j++){
-        var n=(ss[j].name||'').toLowerCase();var v=parseFloat(ss[j].value);if(isNaN(v))continue;
-        if(n.includes('goal')&&!n.includes('against'))t.goals=v;if(n.includes('assist'))t.assists=v;
-        if(n.includes('point')&&!n.includes('pct'))t.points=v;if(n.includes('plusminus'))t.plusMinus=v;
-        if(n.includes('penaltyminute'))t.pim=v;if(n.includes('hit'))t.hits=v;if(n.includes('block'))t.blocks=v;if(n.includes('gamesplayed'))t.gp=v;
-      }}
-      if(Object.keys(t).length>2){LV[p.id]=Object.assign({},p.fb,t);return true;}
-    }else if(p.sport==='soccer'&&p.lk){
-      d=await eg('https://site.web.api.espn.com/apis/site/v2/sports/soccer/'+p.lk+'/athletes/'+p.espnId+'/statistics');
-      cats=(d&&d.splits&&d.splits.categories)||[];
-      for(var i=0;i<cats.length;i++){var ss=cats[i].stats||[];for(var j=0;j<ss.length;j++){
-        var n=(ss[j].name||'').toLowerCase();var v=parseFloat(ss[j].value);if(isNaN(v))continue;
-        if(n.includes('goal')&&!n.includes('against')&&!n.includes('allowed'))t.goals=v;
-        if(n.includes('assist'))t.assists=v;if(n.includes('appearance')||n==='gamesplayed')t.apps=v;
-        if(n.includes('shot')&&!n.includes('on'))t.shots=v;if(n.includes('shotongoal'))t.shotsOn=v;
-        if(n.includes('pass')&&!n.includes('key'))t.passes=v;if(n.includes('keypass'))t.keyPasses=v;
-        if(n.includes('dribble'))t.dribbles=v;if(n.includes('tackle'))t.tackles=v;if(n.includes('minute'))t.mins=v;
-        if(n.includes('yellow'))t.yellowCards=v;if(n.includes('red'))t.redCards=v;if(n.includes('intercept'))t.interceptions=v;
-        if(n.includes('foul'))t.fouls=v;if(n.includes('save')&&!n.includes('pct'))t.saves=v;if(n.includes('cleansheet'))t.cleanSheets=v;
-      }}
-      if(Object.keys(t).length>2){LV[p.id]=Object.assign({},p.fb,t);return true;}
+  var cx = sz/2, cy = sz/2, r = sz*0.38, n = 6, i, a, rp, vp = [];
+  var o = '<svg width="'+sz+'" height="'+sz+'" viewBox="0 0 '+sz+' '+sz+'">';
+  var grids = [0.25, 0.5, 0.75, 1];
+  for (var g = 0; g < grids.length; g++) {
+    rp = [];
+    for (i = 0; i < n; i++) {
+      a = (i/n)*2*Math.PI - Math.PI/2;
+      rp.push((cx+r*grids[g]*Math.cos(a)).toFixed(1)+','+(cy+r*grids[g]*Math.sin(a)).toFixed(1));
     }
-  }catch(e){}return false;
-}
-async function refresh(){
-  var btn=document.querySelector('.lvl');if(btn)btn.textContent='...';
-  var ut=document.getElementById('utx');ut.className='';ut.textContent='Fetching ESPN...';
-  var n=0;
-  await Promise.all(AP.map(async function(p){if(await fOne(p))n++;}));
-  if(btn)btn.textContent='LIVE';saveC();rAll();
-  if(n>0){ut.className='uok';ut.textContent='Live · '+new Date().toLocaleString()+' · '+n+' updated';toast(n+' players updated');}
-  else{ut.textContent='Cached · '+new Date().toLocaleString();}
+    o += '<polygon points="'+rp.join(' ')+'" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="1"/>';
+  }
+  for (i = 0; i < n; i++) {
+    a = (i/n)*2*Math.PI - Math.PI/2;
+    o += '<line x1="'+cx+'" y1="'+cy+'" x2="'+(cx+r*Math.cos(a)).toFixed(1)+'" y2="'+(cy+r*Math.sin(a)).toFixed(1)+'" stroke="rgba(255,255,255,.06)" stroke-width="1"/>';
+  }
+  for (i = 0; i < n; i++) {
+    a = (i/n)*2*Math.PI - Math.PI/2;
+    var v = ((vals[i]||0)/100);
+    vp.push((cx+r*v*Math.cos(a)).toFixed(1)+','+(cy+r*v*Math.sin(a)).toFixed(1));
+  }
+  o += '<polygon points="'+vp.join(' ')+'" fill="'+color+'28" stroke="'+color+'" stroke-width="1.5" stroke-linejoin="round"/>';
+  for (i = 0; i < n; i++) {
+    a = (i/n)*2*Math.PI - Math.PI/2;
+    var v2 = ((vals[i]||0)/100);
+    var dx = (cx+r*v2*Math.cos(a)).toFixed(1), dy = (cy+r*v2*Math.sin(a)).toFixed(1);
+    o += '<circle cx="'+dx+'" cy="'+dy+'" r="2.5" fill="'+color+'"/>';
+    if (lbls && lbls[i]) {
+      var lx = (cx+(r+13)*Math.cos(a)).toFixed(1), ly = (cy+(r+13)*Math.sin(a)).toFixed(1);
+      o += '<text x="'+lx+'" y="'+ly+'" text-anchor="middle" dominant-baseline="middle" font-family="DM Mono,monospace" font-size="6.5" fill="rgba(255,255,255,.35)">'+lbls[i]+'</text>';
+    }
+  }
+  o += '</svg>';
+  return o;
 }
 
-// ── tabs ─────────────────────────────────────────────────────────────────────
-var TC={all:'#c8a84b',nba:'#E03A3E',nhl:'#00B4D8',eu:'#22c55e',mls:'#FF6B35',jpn:'#E63946'};
-function hx(c){return parseInt(c.slice(1,3),16)+','+parseInt(c.slice(3,5),16)+','+parseInt(c.slice(5,7),16);}
-function rTabs(){
-  var defs=[{k:'all',l:'🇮🇱 All ('+AP.length+')'},{k:'nba',l:'🏀 NBA (3)'},{k:'nhl',l:'🏒 NHL (2)'},{k:'eu',l:'⚽ Europe (10)'},{k:'mls',l:'🌎 MLS (7)'},{k:'jpn',l:'🗾 Japan (1)'}];
-  var ti=document.getElementById('tabs');if(!ti)return;ti.innerHTML='';
-  defs.forEach(function(d){
-    var b=document.createElement('button');b.className='tb'+(ASP===d.k?' a':'');b.textContent=d.l;
-    var c=TC[d.k]||'#fff';b.style.setProperty('--tba','rgba('+hx(c)+',.08)');b.style.setProperty('--tbc',c);
-    b.onclick=function(){ASP=d.k;rTabs();rGrid();rCmp();};ti.appendChild(b);
+// Cache
+function saveC() { try { localStorage.setItem(CK, JSON.stringify({ts:Date.now(),d:LV})); } catch(e) {} }
+function loadC() {
+  try {
+    var r = JSON.parse(localStorage.getItem(CK) || '{}');
+    if (r.d && Date.now()-r.ts < TTL) { LV = r.d; return true; }
+  } catch(e) {}
+  return false;
+}
+
+// Toast
+function toast(m) {
+  var t = document.getElementById('toast');
+  if (!t) return;
+  t.textContent = m;
+  t.classList.add('sh');
+  setTimeout(function() { t.classList.remove('sh'); }, 2600);
+}
+
+// Clock
+setInterval(function() {
+  var e = document.getElementById('clk');
+  if (e) e.textContent = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit', second:'2-digit'});
+}, 1000);
+
+// Stat helpers
+function gs(id, k) {
+  var lv = LV[id];
+  if (lv && lv[k] != null) return lv[k];
+  var p = AP.find(function(x) { return x.id === id; });
+  return p && p.fb ? p.fb[k] : null;
+}
+function fmt(v, d) {
+  if (v == null || v === '') return '—';
+  var n = parseFloat(v);
+  return isNaN(n) ? String(v) : n.toFixed(d != null ? d : 1);
+}
+function fi(v) { return (v == null) ? '—' : Math.round(parseFloat(v) || 0); }
+function pm(v) { var n = parseFloat(v); return isNaN(n) ? '—' : (n > 0 ? '+' : '') + n.toFixed(0); }
+
+// Photo URLs
+
+function pImgClass(p) {
+  if (p.sport === 'nba' && p.nbaId) return 'nba-ph';
+  if (p.photoUrl) return 'wp-ph';
+  if (p.espnId) return 'esp-ph';
+  return '';
+}
+function pUrl(p, big) {
+  if (p.photoUrl) return p.photoUrl;
+  // NBA: official CDN first, ESPN combiner fallback handled in onImgErr
+  if (p.sport === 'nba' && p.nbaId) return 'https://cdn.nba.com/headshots/nba/latest/1040x760/'+p.nbaId+'.png';
+  if (p.espnId) {
+    var sz = big ? '&w=350&h=254' : '&w=180&h=130';
+    // Use ESPN combiner which is CORS-friendly and allows hotlinking
+    if (p.sport === 'nhl') return 'https://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/'+p.espnId+'.png'+sz;
+    if (p.sport === 'nba') return 'https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/'+p.espnId+'.png'+sz;
+    return 'https://a.espncdn.com/i/headshots/soccer/players/full/'+p.espnId+'.png';
+  }
+  return '';
+}
+function onImgErr(img, pid, big) {
+  var p = AP.find(function(x) { return x.id === pid; });
+  if (!p) return;
+  if (p.sport === 'nba' && img.src.indexOf('cdn.nba') > -1 && p.espnId) {
+    img.src = 'https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/'+p.espnId+'.png&w=350&h=254';
+    return;
+  }
+  // If it's already an ESPN combiner or ui-avatars URL that failed, go straight to silhouette
+  img.style.display = 'none';
+  var fb = img.parentNode.querySelector(big ? '.pfb2' : '.pfb');
+  if (fb) {
+        fb.style.display = 'flex';
+        var jn = p.jersey || (p.name ? p.name.charAt(0) : '?');
+        var silSvg = '<svg class="pfb-svg pfb2-svg" viewBox="0 0 24 24" fill="white"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>';
+        var numCls = big ? 'pfb2-num' : 'pfb-num';
+        fb.innerHTML = silSvg + '<div class="' + numCls + '" style="color:' + p.pc + ';text-shadow:0 0 14px ' + p.pc + '">' + jn + '</div>';
+      }
+}
+
+// ESPN fetch (plain Promise, no async/await)
+function fetchESPN(url) {
+  return fetch(url).then(function(r) { return r.ok ? r.json() : null; }).catch(function() { return null; });
+}
+
+function fetchOne(p) {
+  if (!p.espnId) return Promise.resolve(false);
+  var url = '';
+  if (p.sport === 'nba') url = 'https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/'+p.espnId+'/overview';
+  else if (p.sport === 'nhl') url = 'https://site.web.api.espn.com/apis/site/v2/sports/hockey/nhl/athletes/'+p.espnId+'/statistics';
+  else if (p.sport === 'soccer' && p.lk) url = 'https://site.web.api.espn.com/apis/site/v2/sports/soccer/'+p.lk+'/athletes/'+p.espnId+'/statistics';
+  else return Promise.resolve(false);
+
+  return fetchESPN(url).then(function(d) {
+    if (!d) return false;
+    var cats = [], t = {};
+    if (p.sport === 'nba') {
+      cats = (d.athlete && d.athlete.statistics && d.athlete.statistics.splits && d.athlete.statistics.splits.categories) || [];
+    } else {
+      cats = (d.splits && d.splits.categories) || [];
+    }
+    for (var i = 0; i < cats.length; i++) {
+      var ss = cats[i].stats || [];
+      for (var j = 0; j < ss.length; j++) {
+        var nm = (ss[j].name || '').toLowerCase().replace(/[^a-z]/g, '');
+        var v = parseFloat(ss[j].value);
+        if (isNaN(v)) continue;
+        if (p.sport === 'nba') {
+          var M = {avgpoints:'pts',avgrebounds:'reb',avgassists:'ast',avgsteals:'stl',avgblocks:'blk',avgturnover:'tov',avgminutes:'min',gamesplayed:'gp',gamesstarted:'gs',avgoffensiverebounds:'oreb',avgdefensiverebounds:'dreb'};
+          if (M[nm]) t[M[nm]] = v;
+          if (nm === 'fieldgoalpercentage') t.fgp = +(v*100).toFixed(1);
+          if (nm === 'threepointfieldgoalpercentage') t.tpp = +(v*100).toFixed(1);
+          if (nm === 'freethrowpercentage') t.ftp = +(v*100).toFixed(1);
+        } else if (p.sport === 'nhl') {
+          if (nm.indexOf('goal') > -1 && nm.indexOf('against') === -1) t.goals = v;
+          if (nm.indexOf('assist') > -1) t.assists = v;
+          if (nm.indexOf('point') > -1 && nm.indexOf('pct') === -1) t.points = v;
+          if (nm.indexOf('plusminus') > -1) t.plusMinus = v;
+          if (nm.indexOf('penaltyminute') > -1) t.pim = v;
+          if (nm.indexOf('hit') > -1) t.hits = v;
+          if (nm.indexOf('block') > -1) t.blocks = v;
+          if (nm.indexOf('gamesplayed') > -1) t.gp = v;
+        } else {
+          if (nm.indexOf('goal') > -1 && nm.indexOf('against') === -1) t.goals = v;
+          if (nm.indexOf('assist') > -1) t.assists = v;
+          if (nm.indexOf('appearance') > -1 || nm === 'gamesplayed') t.apps = v;
+          if (nm.indexOf('shot') > -1 && nm.indexOf('on') === -1) t.shots = v;
+          if (nm.indexOf('shotongoal') > -1) t.shotsOn = v;
+          if (nm.indexOf('pass') > -1 && nm.indexOf('key') === -1) t.passes = v;
+          if (nm.indexOf('keypass') > -1) t.keyPasses = v;
+          if (nm.indexOf('dribble') > -1) t.dribbles = v;
+          if (nm.indexOf('tackle') > -1) t.tackles = v;
+          if (nm.indexOf('minute') > -1) t.mins = v;
+          if (nm.indexOf('yellow') > -1) t.yellowCards = v;
+          if (nm.indexOf('intercept') > -1) t.interceptions = v;
+          if (nm.indexOf('foul') > -1) t.fouls = v;
+          if (nm.indexOf('save') > -1 && nm.indexOf('pct') === -1) t.saves = v;
+          if (nm.indexOf('cleansheet') > -1) t.cleanSheets = v;
+        }
+      }
+    }
+    var keys = Object.keys(t);
+    if (keys.length > 2) {
+      LV[p.id] = Object.assign({}, p.fb, t);
+      return true;
+    }
+    return false;
+  }).catch(function() { return false; });
+}
+
+function setProgress(pct, done) {
+  var bar = document.getElementById('prog-bar');
+  var wrap = document.getElementById('prog-wrap');
+  if (!bar || !wrap) return;
+  bar.style.width = pct + '%';
+  if (done) {
+    bar.style.background = '#22c55e';
+    setTimeout(function() { wrap.classList.add('done'); }, 600);
+  } else {
+    wrap.classList.remove('done');
+    bar.style.background = '';
+  }
+}
+
+function refresh() {
+  var btn = document.querySelector('.lvl');
+  if (btn) btn.textContent = '...';
+  var ut = document.getElementById('utx-msg');
+  if (ut) ut.textContent = 'Fetching ESPN…';
+  setProgress(5, false);
+  var total = AP.filter(function(p){ return p.espnId; }).length;
+  var done = 0, updated = 0;
+  var promises = AP.map(function(p) {
+    return fetchOne(p).then(function(ok) {
+      if (ok) updated++;
+      if (p.espnId) {
+        done++;
+        var pct = 5 + Math.round(done / total * 90);
+        setProgress(pct, false);
+        if (ut) ut.textContent = 'Updating ' + done + '/' + total + '…';
+      }
+    });
+  });
+  Promise.all(promises).then(function() {
+    if (btn) btn.textContent = 'LIVE';
+    saveC();
+    rAll();
+    setProgress(100, true);
+    var msg = document.getElementById('utx-msg');
+    if (msg) {
+      if (updated > 0) {
+        msg.innerHTML = 'Live · ' + new Date().toLocaleTimeString() + ' <span class="upd-cnt">· ' + updated + ' updated</span>';
+        toast(updated + ' players updated with live data');
+      } else {
+        msg.textContent = 'Cache · ' + new Date().toLocaleTimeString();
+      }
+    }
   });
 }
 
-// ── share ────────────────────────────────────────────────────────────────────
-function sWA(pid){
-  var p=AP.find(function(x){return x.id===pid;});if(!p)return;
-  var txt='🇮🇱 '+(HEB?p.nameHe:p.name)+' | '+p.team+' ('+p.league+')
-';
-  if(p.sport==='nba')txt+='PPG: '+fmt(gs(pid,'pts'),1)+' | REB: '+fmt(gs(pid,'reb'),1)+' | AST: '+fmt(gs(pid,'ast'),1);
-  else if(p.sport==='nhl')txt+='PTS: '+fi(gs(pid,'points'))+' | G: '+fi(gs(pid,'goals'))+' | A: '+fi(gs(pid,'assists'));
-  else if(p.pos==='GK')txt+='Saves: '+fi(gs(pid,'saves'))+' | CS: '+fi(gs(pid,'cleanSheets'));
-  else txt+='G: '+fi(gs(pid,'goals'))+' | A: '+fi(gs(pid,'assists'))+' | Apps: '+fi(gs(pid,'apps'));
-  txt+='
-https://nadavw9.github.io/israeli-sports-tracker';
-  window.open('https://wa.me/?text='+encodeURIComponent(txt),'_blank');
-}
-function sTG(pid){
-  var p=AP.find(function(x){return x.id===pid;});if(!p)return;
-  window.open('https://t.me/share/url?url='+encodeURIComponent('https://nadavw9.github.io/israeli-sports-tracker')+'&text='+encodeURIComponent('🇮🇱 '+p.name+' ('+p.team+')'),'_blank');
+// Tabs config
+var TABS = [
+  {k:'all',     l:'All'},
+  {k:'nba',     l:'NBA'},
+  {k:'nhl',     l:'NHL'},
+  {k:'soccer',  l:'Soccer'},
+  {k:'bball',   l:'Basketball EU'},
+  {k:'wbball',  l:'Women Basketball'},
+  {k:'handball',l:'Handball'},
+  {k:'tennis',  l:'Tennis'},
+  {k:'winter',  l:'Winter Sports'}
+];
+var TC = {all:'#c8a84b',nba:'#E03A3E',nhl:'#00B4D8',soccer:'#22c55e',bball:'#FF6B35',wbball:'#FF69B4',tennis:'#FACC15',handball:'#F97316',winter:'#60A5FA'};
+
+function sportLabel(k) {
+  var labels = {all:'All ('+AP.length+')',nba:'NBA (3)',nhl:'NHL (2)',soccer:'Soccer (15)',bball:'Euro Ball (10)',wbball:'Women Ball (2)',tennis:'Tennis (6)',handball:'Handball (5)',winter:'Winter (4)'};
+  return labels[k] || k;
 }
 
-// ── lang toggle ───────────────────────────────────────────────────────────────
-function tLang(){
-  HEB=!HEB;
-  document.body.classList.toggle('heb',HEB);
-  var btn=document.getElementById('lbtn');
-  btn.textContent=HEB?'EN':'עב';
-  toast(HEB?'מצב עברית פעיל':'English mode');
+function sportEmoji(k) {
+  var em = {all:'', nba:'', nhl:'', soccer:'', bball:'', wbball:'', tennis:'', handball:'', winter:''};
+  return em[k] || '';
 }
 
-// ── form badges ───────────────────────────────────────────────────────────────
-function fBadge(form){
-  if(!form||!form.length)return '';
-  var r=['<div class="fr"><span class="frl">FORM</span>'];
-  form.forEach(function(f){r.push('<div class="fd '+(f==='W'?'fw':f==='L'?'fl':'fdr')+'">'+f+'</div>');});
-  r.push('</div>');return r.join('');
-}
+function hx(c) { return parseInt(c.slice(1,3),16)+','+parseInt(c.slice(3,5),16)+','+parseInt(c.slice(5,7),16); }
 
-// ── card stats ───────────────────────────────────────────────────────────────
-function nbaCS(p){
-  var r=['<div class="sg">'];
-  [['pts','PTS',1],['reb','REB',1],['ast','AST',1],['stl','STL',1]].forEach(function(x,i){
-    r.push('<div class="st"><div class="sv'+(i===0?' hi':'')+'">'+fmt(gs(p.id,x[0]),x[2])+'</div><div class="sl2">'+x[1]+'</div></div>');
+function rTabs() {
+  var ti = document.getElementById('tabs');
+  if (!ti) return;
+  ti.innerHTML = '';
+  var counts = {};
+  AP.forEach(function(p) {
+    counts[p.sport] = (counts[p.sport]||0)+1;
+    counts.all = (counts.all||0)+1;
   });
-  r.push('</div><div style="display:flex;gap:8px;margin-top:4px;font-family:DM Mono,monospace;font-size:9px;color:var(--t3)">');
-  r.push('<span>'+gs(p.id,'gp')+' GP</span><span>FG '+fmt(gs(p.id,'fgp'),1)+'%</span><span>3P '+fmt(gs(p.id,'tpp'),1)+'%</span></div>');
-  return r.join('');
-}
-function nhlCS(p){
-  var r=['<div class="sg">'];
-  [['goals','G'],['assists','A'],['points','PTS'],['plusMinus','+/-']].forEach(function(x,i){
-    var v=gs(p.id,x[0]);r.push('<div class="st"><div class="sv'+(i===2?' hi':'')+'">'+((x[0]==='plusMinus')?pm(v):fi(v))+'</div><div class="sl2">'+x[1]+'</div></div>');
+  TABS.forEach(function(d) {
+    var cnt = counts[d.k] || 0;
+    if (d.k !== 'all' && cnt === 0) return;
+    var b = document.createElement('button');
+    b.className = 'tb' + (ASP === d.k ? ' a' : '');
+    b.textContent = d.l + ' (' + (d.k === 'all' ? AP.length : cnt) + ')';
+    var c = TC[d.k] || '#fff';
+    b.style.setProperty('--tba', 'rgba('+hx(c)+',.1)');
+    b.style.setProperty('--tbc', c);
+    b.onclick = function() { ASP = d.k; rTabs(); rGrid(); rCmp(); };
+    ti.appendChild(b);
   });
-  r.push('</div><div style="display:flex;gap:8px;margin-top:4px;font-family:DM Mono,monospace;font-size:9px;color:var(--t3)"><span>'+gs(p.id,'gp')+' GP</span><span>TOI '+gs(p.id,'toi')+'</span></div>');
-  return r.join('');
+  ti.scrollLeft = 0;
 }
-function socCS(p){
-  var isGK=p.pos==='GK',isDF=(p.pos==='CB'||p.pos==='RB'||p.pos==='LB');
-  var k=isGK?[['saves','SAVES'],['cleanSheets','CLNS'],['apps','APPS'],['mins','MINS']]:isDF?[['tackles','TKLS'],['interceptions','INT'],['apps','APPS'],['mins','MINS']]:[['goals','G'],['assists','A'],['apps','APPS'],['shots','SH']];
-  var r=['<div class="sg">'];k.forEach(function(x,i){r.push('<div class="st"><div class="sv'+(i<2?' hi':'')+'">'+fi(gs(p.id,x[0]))+'</div><div class="sl2">'+x[1]+'</div></div>');});
-  r.push('</div>');return r.join('');
-}
-function cs(p){if(p.sport==='nba')return nbaCS(p);if(p.sport==='nhl')return nhlCS(p);return socCS(p);}
 
-// ── filter ───────────────────────────────────────────────────────────────────
-function fp(){
-  return AP.filter(function(p){
-    if(ASP!=='all'&&p.sub!==ASP)return false;
-    if(SQ){
-      var q=SQ.toLowerCase();
-      var match=p.name.toLowerCase().indexOf(q)>-1||p.nameHe.indexOf(SQ)>-1||p.team.toLowerCase().indexOf(q)>-1||p.league.toLowerCase().indexOf(q)>-1||p.pos.toLowerCase().indexOf(q)>-1;
-      if(!match)return false;
+// Share
+function sWA(pid) {
+  var p = AP.find(function(x) { return x.id === pid; });
+  if (!p) return;
+  var flag = String.fromCodePoint(127470, 127473);
+  var txt = flag + ' ' + (HEB ? p.nameHe : p.name) + ' | ' + p.team + ' (' + p.league + ')\n';
+  if (p.sport === 'nba') txt += 'PPG: '+fmt(gs(pid,'pts'),1)+' | REB: '+fmt(gs(pid,'reb'),1)+' | AST: '+fmt(gs(pid,'ast'),1);
+  else if (p.sport === 'nhl') txt += 'PTS: '+fi(gs(pid,'points'))+' | G: '+fi(gs(pid,'goals'))+' | A: '+fi(gs(pid,'assists'));
+  else if (p.sport === 'tennis') txt += 'Rank: '+(gs(pid,'atp_rank')||gs(pid,'wta_rank'))+' | W: '+fi(gs(pid,'wins'))+' L: '+fi(gs(pid,'losses'));
+  else if (p.sport === 'handball') txt += 'G: '+fi(gs(pid,'goals'))+' | AST: '+fi(gs(pid,'assists'))+' | Apps: '+fi(gs(pid,'apps'));
+  else txt += 'G: '+fi(gs(pid,'goals'))+' | A: '+fi(gs(pid,'assists'))+' | Apps: '+fi(gs(pid,'apps'));
+  txt += '\nhttps://nadavw9.github.io/israeli-sports-tracker';
+  window.open('https://wa.me/?text='+encodeURIComponent(txt), '_blank');
+}
+function sTG(pid) {
+  var p = AP.find(function(x) { return x.id === pid; });
+  if (!p) return;
+  window.open('https://t.me/share/url?url='+encodeURIComponent('https://nadavw9.github.io/israeli-sports-tracker')+'&text='+encodeURIComponent(p.name+' ('+p.team+')'),'_blank');
+}
+
+// Language
+function tLang() {
+  HEB = !HEB;
+  document.body.classList.toggle('heb', HEB);
+  var btn = document.getElementById('lbtn');
+  if (btn) btn.textContent = HEB ? 'EN' : 'עב';
+  toast(HEB ? 'מצב עברית' : 'English mode');
+}
+
+// Form badges
+function fBadge(form) {
+  if (!form || !form.length) return '';
+  var r = '<div class="fr"><span class="frl">FORM</span>';
+  form.forEach(function(f) {
+    r += '<div class="fd ' + (f==='W'?'fw':f==='L'?'fl':'fdr') + '">' + f + '</div>';
+  });
+  r += '</div>';
+  return r;
+}
+
+// ── CARD STATS ───────────────────────────────────────────────────────────────
+function statBox(val, lbl, hi) {
+  return '<div class="st"><div class="sv'+(hi?' hi':'')+'">'+val+'</div><div class="sl2">'+lbl+'</div></div>';
+}
+function statRow(items) {
+  var r = '<div class="sg">';
+  items.forEach(function(x) { r += statBox(x[0], x[1], x[2]); });
+  r += '</div>';
+  return r;
+}
+
+function nbaCardStats(p) {
+  var id = p.id;
+  // Primary: PPG + Usage + ORTG. Secondary: RPG AST FG%
+  var pts = fmt(gs(id,'pts'),1), usg = fmt(gs(id,'usg'),1), ortg = fi(gs(id,'ortg')), reb = fmt(gs(id,'reb'),1), ast = fmt(gs(id,'ast'),1), fgp = fmt(gs(id,'fgp'),1);
+  var tsp = fmt(gs(id,'tsp'),1);
+  return statRow([[pts,'PPG',true],[usg+'%','USG%',false],[reb,'RPG',false],[ast,'APG',false]])
+    + '<div class="xst">ORTG '+ortg+' &nbsp; TS '+tsp+'% &nbsp; FG '+fgp+'%</div>';
+}
+function nhlCardStats(p) {
+  var id = p.id;
+  var goals = fi(gs(id,'goals')), assists = fi(gs(id,'assists')), pts = fi(gs(id,'points')), pm = gs(id,'plusMinus');
+  var pmStr = (pm == null ? '-' : (pm > 0 ? '+' : '') + Math.round(pm));
+  var shots = fi(gs(id,'shots')), hits = fi(gs(id,'hits'));
+  return statRow([[goals,'G',true],[assists,'A',false],[pts,'PTS',true],[pmStr,'+/-',false]])
+    + '<div class="xst">'+gs(id,'gp')+' GP &nbsp; '+shots+' SOG &nbsp; '+hits+' HITS</div>';
+}
+function soccerCardStats(p) {
+  var id = p.id, pos = p.pos;
+  var isGK = pos === 'GK';
+  var isCB = pos === 'CB', isLRB = pos === 'RB' || pos === 'LB';
+  var isMid = pos === 'CM' || pos === 'CAM' || pos === 'AM';
+  var isFwd = pos === 'ST' || pos === 'FW' || pos === 'LW' || pos === 'RW' || pos === 'RM';
+  if (isGK) {
+    var saves = fi(gs(id,'saves')), cs = fi(gs(id,'cleanSheets')), apps = fi(gs(id,'apps'));
+    var svpct = (gs(id,'saves') && gs(id,'shots')) ? fmt(gs(id,'saves')/(gs(id,'saves')+gs(id,'goals')-0)*100, 1) : '-';
+    return statRow([[saves,'SAVES',true],[cs,'CLEAN SH',true],[apps,'APPS',false],[gs(id,'mins'),'MINS',false]])
+      + '<div class="xst">Save% est. '+svpct+'%</div>';
+  }
+  if (isCB || isLRB) {
+    return statRow([[fi(gs(id,'tackles')),'TACKLES',true],[fi(gs(id,'interceptions')),'INT',true],[fi(gs(id,'apps')),'APPS',false],[fi(gs(id,'yellowCards')),'YC',false]])
+      + '<div class="xst">'+gs(id,'mins')+' mins &nbsp; '+fi(gs(id,'fouls'))+' fouls</div>';
+  }
+  if (isMid) {
+    return statRow([[fi(gs(id,'goals')),'G',true],[fi(gs(id,'assists')),'A',true],[fi(gs(id,'keyPasses')),'KEY PASS',false],[fi(gs(id,'dribbles')),'DRIB',false]])
+      + '<div class="xst">'+fi(gs(id,'apps'))+' apps &nbsp; '+fi(gs(id,'passes'))+' pass</div>';
+  }
+  // Forward
+  var shotsOn = fi(gs(id,'shotsOn')), shots = fi(gs(id,'shots'));
+  var sotp = (gs(id,'shots') && parseFloat(gs(id,'shots'))>0) ? fmt(parseFloat(gs(id,'shotsOn')||0)/parseFloat(gs(id,'shots'))*100,0) : '-';
+  return statRow([[fi(gs(id,'goals')),'GOALS',true],[fi(gs(id,'assists')),'ASSISTS',true],[shotsOn,'SOT',false],[sotp+'%','SOT%',false]])
+    + '<div class="xst">'+fi(gs(id,'apps'))+' apps &nbsp; '+shots+' shots &nbsp; '+fi(gs(id,'mins'))+'min</div>';
+}
+function bballCardStats(p) {
+  var id = p.id;
+  // Show pts + eff rating + rpg + apg
+  var pts = fmt(gs(id,'pts'),1), reb = fmt(gs(id,'reb'),1), ast = fmt(gs(id,'ast'),1), fgp = fmt(gs(id,'fgp'),1), tpp = fmt(gs(id,'tpp'),1);
+  // EFF = (PTS + REB + AST + STL + BLK - missed shots - TOV) - simplified
+  var eff = gs(id,'pts') && gs(id,'reb') ? fmt(parseFloat(gs(id,'pts'))+parseFloat(gs(id,'reb'))*0.7+parseFloat(gs(id,'ast')||0)*0.7,1) : '-';
+  return statRow([[pts,'PPG',true],[reb,'RPG',false],[ast,'APG',false],[eff,'EFF',true]])
+    + '<div class="xst">'+gs(id,'gp')+' GP &nbsp; FG '+fgp+'% &nbsp; 3P '+tpp+'%</div>';
+}
+function tennisCardStats(p) {
+  var id = p.id;
+  var rank = gs(id,'atp_rank') || gs(id,'wta_rank') || '-';
+  var wins = fi(gs(id,'wins')), losses = fi(gs(id,'losses'));
+  var total = (parseInt(wins)||0)+(parseInt(losses)||0);
+  var wpct = total > 0 ? fmt((parseInt(wins)||0)/total*100, 0)+'%' : '-';
+  return statRow([['#'+rank,'RANKING',true],[wins,'W',false],[losses,'L',false],[wpct,'WIN%',true]])
+    + '<div class="xst">'+fi(gs(id,'aces'))+' aces &nbsp; '+fi(gs(id,'titles'))+' titles</div>';
+}
+function handballCardStats(p) {
+  var id = p.id, pos = p.pos;
+  var isGK = pos === 'GK';
+  if (isGK) {
+    var saves = fi(gs(id,'saves')), apps = fi(gs(id,'apps'));
+    // approx save% from saves vs saves+goals allowed
+    return statRow([[saves,'SAVES',true],['GK','POS',false],[apps,'APPS',false],[fi(gs(id,'yellowCards')),'YC',false]])
+      + '<div class="xst">Goalkeeper</div>';
+  }
+  var goals = fi(gs(id,'goals')), ast = fi(gs(id,'assists')), apps = fi(gs(id,'apps')), sevenm = fi(gs(id,'sevenm'));
+  var gpa = (gs(id,'goals') && gs(id,'apps') && parseFloat(gs(id,'apps'))>0) ? fmt(parseFloat(gs(id,'goals'))/parseFloat(gs(id,'apps')),1) : '-';
+  return statRow([[goals,'GOALS',true],[ast,'ASSISTS',true],[gpa,'G/GAME',false],[sevenm,'7-METRE',false]])
+    + '<div class="xst">'+apps+' apps</div>';
+}
+function winterCardStats(p) {
+  var id = p.id;
+  var rank = gs(id,'world_rank') || '-';
+  return statRow([['#'+rank,'WORLD RANK',true],[fi(gs(id,'podiums')),'PODIUMS',true],[fi(gs(id,'events')),'EVENTS',false],[gs(id,'season'),'SEASON',false]]);
+}
+function cardStats(p) {
+  if (p.sport === 'nba') return nbaCardStats(p);
+  if (p.sport === 'nhl') return nhlCardStats(p);
+  if (p.sport === 'soccer') return soccerCardStats(p);
+  if (p.sport === 'bball' || p.sport === 'wbball') return bballCardStats(p);
+  if (p.sport === 'tennis') return tennisCardStats(p);
+  if (p.sport === 'handball') return handballCardStats(p);
+  if (p.sport === 'winter') return winterCardStats(p);
+  return '';
+}
+
+// ── DRAWER STATS ─────────────────────────────────────────────────────────────
+function drawerStat(val, lbl) {
+  return '<div class="ds"><div class="dsv">'+val+'</div><div class="dsl">'+lbl+'</div></div>';
+}
+function nbaDrawer(p) {
+  var id = p.id, r = '';
+  r += '<div class="rwr">' + radar(p.radar, p.radarL, p.pc, 140) + '</div>';
+  r += '<div class="ds2">SCORING & IMPACT</div><div class="dg dg4">';
+  r += drawerStat(fmt(gs(id,'pts'),1),'PPG');
+  r += drawerStat(fmt(gs(id,'usg'),1)+'%','USG%');
+  r += drawerStat(fi(gs(id,'ortg')),'ORTG');
+  r += drawerStat(fi(gs(id,'drtg')),'DRTG');
+  r += '</div><div class="dg dg4" style="margin-top:2px">';
+  r += drawerStat(fmt(gs(id,'reb'),1),'RPG');
+  r += drawerStat(fmt(gs(id,'ast'),1),'APG');
+  r += drawerStat(fmt(gs(id,'stl'),1),'STL');
+  r += drawerStat(fmt(gs(id,'blk'),1),'BLK');
+  r += '</div><div class="ds2">SHOOTING EFFICIENCY</div>';
+  var fgp = parseFloat(gs(id,'fgp'))||0, tpp = parseFloat(gs(id,'tpp'))||0, ftp = parseFloat(gs(id,'ftp'))||0, tsp = parseFloat(gs(id,'tsp'))||0;
+  [['FG%',fgp],['3P%',tpp],['FT%',ftp],['TS%',tsp]].forEach(function(x) {
+    r += '<div class="bar"><span class="bl">'+x[0]+'</span><div class="bt"><div class="bf" style="width:'+Math.min(x[1],100)+'%"></div></div><span class="bv">'+fmt(x[1],1)+'%</span></div>';
+  });
+  r += '<div class="ds2">ADVANCED</div><div class="dg dg3">';
+  r += drawerStat(fmt(gs(id,'efgp'),1)+'%','eFG%');
+  r += drawerStat(fmt(gs(id,'tsp'),1)+'%','TS%');
+  var netRtg = gs(id,'ortg') && gs(id,'drtg') ? (parseFloat(gs(id,'ortg'))-parseFloat(gs(id,'drtg'))).toFixed(1) : '-';
+  r += drawerStat(netRtg,'NET RTG');
+  r += '</div><div class="dg dg4" style="margin-top:2px">';
+  r += drawerStat(gs(id,'gp'),'GP');
+  r += drawerStat(gs(id,'gs'),'GS');
+  r += drawerStat(fmt(gs(id,'min'),1),'MPG');
+  r += drawerStat(fmt(gs(id,'tov'),1),'TOV');
+  r += '</div>';
+  return r;
+}
+function nhlDrawer(p) {
+  var id = p.id, r = '';
+  r += '<div class="rwr">' + radar(p.radar, p.radarL, p.pc, 140) + '</div>';
+  r += '<div class="ds2">SCORING</div><div class="dg dg4">';
+  r += drawerStat(fi(gs(id,'goals')),'GOALS');
+  r += drawerStat(fi(gs(id,'assists')),'ASSISTS');
+  r += drawerStat(fi(gs(id,'points')),'POINTS');
+  var pm = gs(id,'plusMinus'); var pmS = pm==null?'-':(pm>0?'+':'')+Math.round(pm);
+  r += drawerStat(pmS,'+/-');
+  r += '</div><div class="ds2">PHYSICAL PLAY</div><div class="dg dg4">';
+  r += drawerStat(fi(gs(id,'shots')),'SHOTS');
+  r += drawerStat(fi(gs(id,'hits')),'HITS');
+  r += drawerStat(fi(gs(id,'blocks')),'BLOCKS');
+  r += drawerStat(fi(gs(id,'pim')),'PIM');
+  r += '</div><div class="ds2">SEASON</div><div class="dg dg2">';
+  r += drawerStat(gs(id,'gp'),'GP');
+  r += drawerStat(gs(id,'toi'),'AVG TOI');
+  r += '</div>';
+  return r;
+}
+function soccerDrawer(p) {
+  var id = p.id, pos = p.pos, isGK = pos === 'GK', r = '';
+  r += '<div class="rwr">' + radar(p.radar, p.radarL, p.pc, 140) + '</div>';
+  if (isGK) {
+    r += '<div class="ds2">GOALKEEPING</div><div class="dg dg3">';
+    r += drawerStat(fi(gs(id,'saves')),'SAVES');
+    r += drawerStat(fi(gs(id,'cleanSheets')),'CLEAN SH');
+    r += drawerStat(fi(gs(id,'apps')),'APPS');
+    r += '</div>';
+    var saves = parseFloat(gs(id,'saves'))||0, ga = parseFloat(gs(id,'goals'))||0;
+    var svpct = saves+ga > 0 ? fmt(saves/(saves+ga)*100,1)+'%' : '-';
+    r += '<div class="dg dg2" style="margin-top:2px">';
+    r += drawerStat(svpct,'SAVE %');
+    r += drawerStat(fi(gs(id,'mins')),'MINS');
+    r += '</div>';
+  } else {
+    r += '<div class="ds2">ATTACKING</div><div class="dg dg4">';
+    r += drawerStat(fi(gs(id,'goals')),'GOALS');
+    r += drawerStat(fi(gs(id,'assists')),'ASSISTS');
+    r += drawerStat(fi(gs(id,'keyPasses')),'KEY PASS');
+    var sotp = gs(id,'shots') && parseFloat(gs(id,'shots'))>0 ? fmt(parseFloat(gs(id,'shotsOn')||0)/parseFloat(gs(id,'shots'))*100,0)+'%' : '-';
+    r += drawerStat(sotp,'SOT%');
+    r += '</div><div class="dg dg4" style="margin-top:2px">';
+    r += drawerStat(fi(gs(id,'shots')),'SHOTS');
+    r += drawerStat(fi(gs(id,'shotsOn')),'ON TARGET');
+    r += drawerStat(fi(gs(id,'dribbles')),'DRIBBLES');
+    r += drawerStat(fi(gs(id,'passes')),'PASSES');
+    r += '</div><div class="ds2">DEFENSIVE</div><div class="dg dg4">';
+    r += drawerStat(fi(gs(id,'tackles')),'TACKLES');
+    r += drawerStat(fi(gs(id,'interceptions')),'INT');
+    r += drawerStat(fi(gs(id,'yellowCards')),'YC');
+    r += drawerStat(fi(gs(id,'fouls')),'FOULS');
+    r += '</div><div class="ds2">SEASON</div><div class="dg dg4">';
+    r += drawerStat(fi(gs(id,'apps')),'APPS');
+    r += drawerStat(fi(gs(id,'mins')),'MINS');
+    var mins = parseFloat(gs(id,'mins'))||0, goals = parseFloat(gs(id,'goals'))||0;
+    var g90 = mins > 0 ? fmt(goals/(mins/90),2) : '-';
+    r += drawerStat(g90,'G/90');
+    r += drawerStat(sotp,'SOT%');
+    r += '</div>';
+  }
+  return r;
+}
+function bballDrawer(p) {
+  var id = p.id, r = '';
+  r += '<div class="rwr">' + radar(p.radar, p.radarL, p.pc, 140) + '</div>';
+  r += '<div class="ds2">SCORING</div><div class="dg dg4">';
+  r += drawerStat(fmt(gs(id,'pts'),1),'PPG');
+  r += drawerStat(fmt(gs(id,'reb'),1),'RPG');
+  r += drawerStat(fmt(gs(id,'ast'),1),'APG');
+  r += drawerStat(fmt(gs(id,'stl'),1),'SPG');
+  r += '</div><div class="ds2">EFFICIENCY</div>';
+  var fgp = parseFloat(gs(id,'fgp'))||0, tpp = parseFloat(gs(id,'tpp'))||0;
+  [['FG%',fgp],['3P%',tpp]].forEach(function(x) {
+    r += '<div class="bar"><span class="bl">'+x[0]+'</span><div class="bt"><div class="bf" style="width:'+Math.min(x[1],100)+'%"></div></div><span class="bv">'+fmt(x[1],1)+'%</span></div>';
+  });
+  var eff = gs(id,'pts') ? fmt(parseFloat(gs(id,'pts'))+parseFloat(gs(id,'reb')||0)*0.7+parseFloat(gs(id,'ast')||0)*0.7,1) : '-';
+  r += '<div class="ds2">SEASON</div><div class="dg dg3">';
+  r += drawerStat(gs(id,'gp'),'GP');
+  r += drawerStat(eff,'EFF');
+  r += drawerStat(fmt(gs(id,'blk'),1),'BPG');
+  r += '</div>';
+  return r;
+}
+function tennisDrawer(p) {
+  var id = p.id, rank = gs(id,'atp_rank') || gs(id,'wta_rank') || '-';
+  var wins = parseInt(gs(id,'wins'))||0, losses = parseInt(gs(id,'losses'))||0;
+  var total = wins+losses, wpct = total > 0 ? fmt(wins/total*100,0)+'%' : '-';
+  var r = '<div class="ds2">RANKING & RECORD</div><div class="dg dg4">';
+  r += drawerStat('#'+rank,'WORLD RANK');
+  r += drawerStat(wins,'WINS');
+  r += drawerStat(losses,'LOSSES');
+  r += drawerStat(wpct,'WIN %');
+  r += '</div><div class="ds2">SERVE STATS</div><div class="dg dg3">';
+  r += drawerStat(fi(gs(id,'aces')),'ACES');
+  r += drawerStat(fi(gs(id,'df')),'DBL FAULTS');
+  r += drawerStat(fi(gs(id,'titles')),'TITLES');
+  r += '</div>';
+  return r;
+}
+function handballDrawer(p) {
+  var id = p.id, pos = p.pos, isGK = pos === 'GK', r = '';
+  r += '<div class="rwr">' + radar(p.radar, p.radarL, p.pc, 140) + '</div>';
+  if (isGK) {
+    r += '<div class="ds2">GOALKEEPING</div><div class="dg dg3">';
+    r += drawerStat(fi(gs(id,'saves')),'SAVES');
+    r += drawerStat(fi(gs(id,'apps')),'APPS');
+    r += drawerStat(fi(gs(id,'yellowCards')),'YC');
+    r += '</div>';
+  } else {
+    r += '<div class="ds2">ATTACKING</div><div class="dg dg4">';
+    r += drawerStat(fi(gs(id,'goals')),'GOALS');
+    r += drawerStat(fi(gs(id,'assists')),'ASSISTS');
+    r += drawerStat(fi(gs(id,'sevenm')),'7-METRE');
+    var gpa = gs(id,'goals') && gs(id,'apps') && parseFloat(gs(id,'apps'))>0 ? fmt(parseFloat(gs(id,'goals'))/parseFloat(gs(id,'apps')),1) : '-';
+    r += drawerStat(gpa,'G/GAME');
+    r += '</div>';
+    r += '<div class="ds2">SEASON</div><div class="dg dg2">';
+    r += drawerStat(fi(gs(id,'apps')),'APPS');
+    r += drawerStat(fi(gs(id,'yellowCards')),'YELLOW CARDS');
+    r += '</div>';
+  }
+  return r;
+}
+function winterDrawer(p) {
+  var id = p.id, rank = gs(id,'world_rank') || '-', r = '';
+  r += '<div class="ds2">RANKING</div><div class="dg dg2">';
+  r += drawerStat('#'+rank,'WORLD RANK');
+  r += drawerStat(fi(gs(id,'podiums')),'PODIUMS');
+  r += '</div><div class="ds2">SEASON</div><div class="dg dg2">';
+  r += drawerStat(fi(gs(id,'events')),'EVENTS');
+  r += drawerStat(gs(id,'season'),'SEASON');
+  r += '</div>';
+  return r;
+}
+function drawerStats(p) {
+  if (p.sport === 'nba') return nbaDrawer(p);
+  if (p.sport === 'nhl') return nhlDrawer(p);
+  if (p.sport === 'soccer') return soccerDrawer(p);
+  if (p.sport === 'bball' || p.sport === 'wbball') return bballDrawer(p);
+  if (p.sport === 'tennis') return tennisDrawer(p);
+  if (p.sport === 'handball') return handballDrawer(p);
+  if (p.sport === 'winter') return winterDrawer(p);
+  return '';
+}
+
+
+function openDrawer(pid) {
+  SEL = pid;
+  rGrid();
+  var p = AP.find(function(x) { return x.id === pid; });
+  if (!p) return;
+  var dr = document.getElementById('dr');
+  if (!dr) return;
+  dr.style.setProperty('--pc', p.pc);
+  var purl = pUrl(p, true);
+  var imgHtml2 = purl
+    ? '<img src="'+purl+'" data-pid="'+p.id+'" onerror="onImgErr(this,this.dataset.pid,true)"><div class="pfb2"></div>'
+    : '<div class="pfb2" style="display:flex;"><svg class="pfb2-svg" viewBox="0 0 24 24" fill="white"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg><div class="pfb2-num" style="color:'+p.pc+'">'+(p.jersey||p.name.charAt(0))+'</div></div>';
+  var flag = String.fromCodePoint(127470,127473);
+  var lm = p.lastMatch;
+  var lmCls = lm ? (lm.result==='W'?'lm-w':lm.result==='L'?'lm-l':'lm-d') : '';
+  var lmHtml = lm
+    ? '<div class="lm '+lmCls+'" style="margin:8px 0"><span class="lm-r">'+lm.result+'</span><span class="lm-sc">'+lm.score+'</span><span class="lm-info">vs '+lm.vs+' &middot; '+lm.stat+'</span></div>'
+    : '';
+  var dw = document.getElementById('dw');
+  if (!dw) return;
+  dw.innerHTML =
+    '<div class="dh2">'
+    + '<div class="dph">' + imgHtml2 + '<div class="fbg" style="position:absolute;bottom:4px;right:4px;font-size:14px;background:rgba(0,0,0,.6);border-radius:4px;padding:1px 3px;">'+flag+'</div></div>'
+    + '<div class="di">'
+    +   '<div class="din" style="color:'+p.pc+'">'+p.name+' '+liveBadge(pid)+'</div>'
+    +   '<div class="dihe">'+p.nameHe+'</div>'
+    +   '<div class="dim">'+p.team+(p.age?' &middot; age '+p.age:'')+'<br>'+p.pos+(p.jersey?' / #'+p.jersey:'')+'<br>'+p.league+'</div>'
+    + '</div>'
+    + '</div>'
+    + lmHtml
+    + '<div id="dstats">'+drawerStats(p)+'</div>'
+    + '<div class="shr" style="padding:16px">'
+    +   '<button class="sb sw" data-pid="'+p.id+'" onclick="sWA(this.dataset.pid)">WhatsApp</button>'
+    +   '<button class="sb stg" data-pid="'+p.id+'" onclick="sTG(this.dataset.pid)">Telegram</button>'
+    + '</div>';
+  dr.classList.add('op');
+  renderGameLog(pid);
+  var ov = document.getElementById('dov');
+  if (ov) ov.classList.add('vs');
+}
+function closeDrawer() {
+  SEL = null;
+  rGrid();
+  document.getElementById('dr').classList.remove('op');
+  var ov2 = document.getElementById('dov'); if(ov2) ov2.classList.remove('vs');
+}
+
+// Compare
+
+
+
+
+var SORT = 'default';
+
+var SORT_OPTS = [
+  {k:'default', l:'Default'},
+  {k:'pts_desc', l:'Top Scorers'},
+  {k:'apps_desc', l:'Most Apps'},
+  {k:'age_asc', l:'Youngest'}
+];
+
+function getSortVal(p, k) {
+  if (k === 'pts_desc') return parseFloat(gs(p.id,'pts')||gs(p.id,'goals')||0) * -1;
+  if (k === 'apps_desc') return -parseFloat(gs(p.id,'apps')||gs(p.id,'gp')||0);
+  if (k === 'age_asc') return p.age || 99;
+  return 0;
+}
+
+function rSort() {
+  var row = document.getElementById('sort-row');
+  if (!row) return;
+  row.innerHTML = '';
+  SORT_OPTS.forEach(function(o) {
+    var b = document.createElement('button');
+    b.className = 'sr' + (SORT===o.k?' a':'');
+    b.textContent = o.l;
+    b.onclick = function() { SORT=o.k; rSort(); rGrid(); };
+    row.appendChild(b);
+  });
+}
+
+function lastMatchHtml(lm) {
+  if (!lm) return '';
+  var cls = lm.result==='W' ? 'lm-w' : lm.result==='L' ? 'lm-l' : 'lm-d';
+  return '<div class="lm ' + cls + '">'
+    + '<span class="lm-r">' + lm.result + '</span>'
+    + '<span class="lm-sc">' + lm.score + '</span>'
+    + '<span class="lm-info">vs ' + lm.vs + ' &middot; ' + lm.stat + '</span>'
+    + '</div>';
+}
+
+function liveBadge(pid) {
+  var p = AP.find(function(x) { return x.id === pid; });
+  if (!p) return '';
+  var hasLive = p.espnId && LV[pid];
+  var hasCdn = p.espnId;
+  if (hasLive) {
+    var isPulsing = LIVE_PLAYERS[pid] ? ' pulsing' : '';
+    return '<span class="lb lv-badge' + isPulsing + '">LIVE</span>';
+  }
+  if (hasCdn) return '<span class="lb mn-badge">ESPN</span>';
+  return '<span class="lb mn-badge">MANUAL</span>';
+}
+
+function showSkeletons(n) {
+  var g = document.getElementById('grid');
+  if (!g) return;
+  var out = '';
+  for (var i = 0; i < n; i++) {
+    out += '<div class="sk-card">'
+      + '<div style="display:flex;gap:10px;margin-bottom:10px"><div class="sk sk-img"></div>'
+      + '<div style="flex:1"><div class="sk sk-line sk-w80"></div><div class="sk sk-line sk-w60"></div><div class="sk sk-line sk-w40"></div></div></div>'
+      + '<div class="sk-stats"><div class="sk sk-st"></div><div class="sk sk-st"></div><div class="sk sk-st"></div><div class="sk sk-st"></div></div>'
+      + '</div>';
+  }
+  g.innerHTML = out;
+}
+
+// Grid render
+function filtered() {
+  var result = AP.filter(function(p) {
+    if (ASP !== 'all' && p.sport !== ASP) return false;
+    if (SQ) {
+      var q = SQ.toLowerCase();
+      if (p.name.toLowerCase().indexOf(q) === -1
+        && p.nameHe.indexOf(SQ) === -1
+        && p.team.toLowerCase().indexOf(q) === -1
+        && p.league.toLowerCase().indexOf(q) === -1
+        && p.pos.toLowerCase().indexOf(q) === -1) return false;
     }
     return true;
   });
-}
-
-// ── grid ─────────────────────────────────────────────────────────────────────
-function rGrid(){
-  var g=document.getElementById('grid');if(!g)return;
-  var ps=fp();
-  var sl=document.getElementById('slbl');if(sl)sl.textContent=ps.length+' ATHLETES · '+(ASP==='all'?'ALL SPORTS':ASP.toUpperCase());
-  g.innerHTML='';
-  if(ps.length===0){g.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--t3);font-family:DM Mono,monospace;font-size:12px">No players match your search</div>';return;}
-  ps.forEach(function(p,i){
-    var c=document.createElement('div');
-    c.className='cd'+(SEL===p.id?' sl':'');
-    c.style.setProperty('--pc',p.pc);
-    c.style.animationDelay=(i*0.035)+'s';
-    c.innerHTML='<div class="cb">'
-      +'<div class="ch">'
-        +'<div class="cph"><img src="'+pUrl(p)+'" loading="lazy" onerror="onE(this,''+p.id+'',false)"><div class="pfb"></div></div>'
-        +'<div class="ci">'
-          +'<div class="cn">'+p.name+'</div>'
-          +'<div class="che">'+p.nameHe+'</div>'
-          +'<div class="ctm">'+p.team+'</div>'
-          +'<div class="ctgs"><span class="tg">'+p.pos+'</span><span class="tg">#'+p.jersey+'</span><span class="tg2">'+p.league+'</span></div>'
-        +'</div>'
-      +'</div>'
-      +cs(p)
-      +fBadge(p.form)
-      +'<div class="shr">'
-        +'<button class="sb sw" onclick="event.stopPropagation();sWA(''+p.id+'')">📲 WhatsApp</button>'
-        +'<button class="sb stg" onclick="event.stopPropagation();sTG(''+p.id+'')">✈️ Telegram</button>'
-      +'</div>'
-    +'</div>';
-    c.addEventListener('click',function(){oDr(p.id);});
-    g.appendChild(c);
-  });
-}
-
-// ── drawer ───────────────────────────────────────────────────────────────────
-function nbaD(p){
-  var id=p.id,r=[];
-  r.push('<div class="rwr">'+radar(p.radar,p.radarL,p.pc,140)+'</div>');
-  r.push('<div class="ds2">SCORING</div><div class="dg dg4">');
-  [['pts','PPG',1],['reb','RPG',1],['ast','APG',1],['min','MPG',1]].forEach(function(x){r.push('<div class="ds"><div class="dsv">'+fmt(gs(id,x[0]),x[2])+'</div><div class="dsl">'+x[1]+'</div></div>');});
-  r.push('</div><div class="dg dg4" style="margin-top:2px">');
-  [['stl','STL',1],['blk','BLK',1],['tov','TOV',1],['pf','PF',1]].forEach(function(x){r.push('<div class="ds"><div class="dsv">'+fmt(gs(id,x[0]),x[2])+'</div><div class="dsl">'+x[1]+'</div></div>');});
-  r.push('</div><div class="ds2">SHOOTING</div>');
-  [['FG%',gs(id,'fgp')],['3P%',gs(id,'tpp')],['FT%',gs(id,'ftp')]].forEach(function(x){
-    var pct=parseFloat(x[1])||0,bw=Math.min(pct,100)+'%';
-    r.push('<div class="bar"><span class="bl">'+x[0]+'</span><div class="bt"><div class="bf" style="width:'+bw+'"></div></div><span class="bv">'+fmt(pct,1)+'%</span></div>');
-  });
-  r.push('<div class="ds2">ADVANCED</div><div class="dg dg3">');
-  [['eFG%',gs(id,'efgp')],['TS%',gs(id,'tsp')],['USG%',gs(id,'usg')]].forEach(function(x){r.push('<div class="ds"><div class="dsv">'+fmt(x[1],1)+'</div><div class="dsl">'+x[0]+'</div></div>');});
-  r.push('</div><div class="dg dg3" style="margin-top:2px">');
-  var og=gs(id,'ortg'),dg=gs(id,'drtg');
-  [['ORTG',og],['DRTG',dg],['NET',og&&dg?(og-dg).toFixed(1):'—']].forEach(function(x){r.push('<div class="ds"><div class="dsv">'+fmt(x[1],0)+'</div><div class="dsl">'+x[0]+'</div></div>');});
-  r.push('</div><div class="ds2">SEASON</div><div class="dg dg3">');
-  [['GP',gs(id,'gp'),0],['GS',gs(id,'gs'),0],['oREB',gs(id,'oreb'),1]].forEach(function(x){r.push('<div class="ds"><div class="dsv">'+fmt(x[1],x[2])+'</div><div class="dsl">'+x[0]+'</div></div>');});
-  r.push('</div>');return r.join('');
-}
-function nhlD(p){
-  var id=p.id,r=[];
-  r.push('<div class="rwr">'+radar(p.radar,p.radarL,p.pc,140)+'</div>');
-  r.push('<div class="ds2">SCORING</div><div class="dg dg4">');
-  [['goals','G'],['assists','A'],['points','PTS'],['plusMinus','+/-']].forEach(function(x){var v=gs(id,x[0]);r.push('<div class="ds"><div class="dsv">'+(x[0]==='plusMinus'?pm(v):fi(v))+'</div><div class="dsl">'+x[1]+'</div></div>');});
-  r.push('</div><div class="ds2">PHYSICAL</div><div class="dg dg4">');
-  [['shots','SOG'],['hits','HITS'],['blocks','BLK'],['pim','PIM']].forEach(function(x){r.push('<div class="ds"><div class="dsv">'+fi(gs(id,x[0]))+'</div><div class="dsl">'+x[1]+'</div></div>');});
-  r.push('</div><div class="ds2">SEASON</div><div class="dg dg2"><div class="ds"><div class="dsv">'+gs(id,'gp')+'</div><div class="dsl">GP</div></div><div class="ds"><div class="dsv">'+gs(id,'toi')+'</div><div class="dsl">AVG TOI</div></div></div>');
-  return r.join('');
-}
-function socD(p){
-  var id=p.id,isGK=p.pos==='GK',r=[];
-  r.push('<div class="rwr">'+radar(p.radar,p.radarL,p.pc,140)+'</div>');
-  if(isGK){
-    r.push('<div class="ds2">GOALKEEPING</div><div class="dg dg3">');
-    [['saves','SAVES'],['cleanSheets','CLEANS'],['apps','APPS']].forEach(function(x){r.push('<div class="ds"><div class="dsv">'+fi(gs(id,x[0]))+'</div><div class="dsl">'+x[1]+'</div></div>');});
-    r.push('</div><div class="dg dg2" style="margin-top:2px"><div class="ds"><div class="dsv">'+gs(id,'mins')+'</div><div class="dsl">MINS</div></div></div>');
-  }else{
-    r.push('<div class="ds2">ATTACKING</div><div class="dg dg3">');
-    [['goals','GOALS'],['assists','ASSISTS'],['keyPasses','KEY PASSES']].forEach(function(x){r.push('<div class="ds"><div class="dsv">'+fi(gs(id,x[0]))+'</div><div class="dsl">'+x[1]+'</div></div>');});
-    r.push('</div><div class="dg dg4" style="margin-top:2px">');
-    [['shots','SHOTS'],['shotsOn','SOT'],['dribbles','DRIB'],['passes','PASS']].forEach(function(x){r.push('<div class="ds"><div class="dsv">'+fi(gs(id,x[0]))+'</div><div class="dsl">'+x[1]+'</div></div>');});
-    r.push('</div><div class="ds2">DEFENDING</div><div class="dg dg4">');
-    [['tackles','TKLS'],['interceptions','INT'],['yellowCards','YC'],['fouls','FOULS']].forEach(function(x){r.push('<div class="ds"><div class="dsv">'+fi(gs(id,x[0]))+'</div><div class="dsl">'+x[1]+'</div></div>');});
-    r.push('</div><div class="ds2">SEASON</div>');
-    var mins=gs(id,'mins'),gl=gs(id,'goals');
-    var g90=mins&&gl&&parseFloat(mins)>0?(parseFloat(gl)/(parseFloat(mins)/90)).toFixed(2):'—';
-    var sh=gs(id,'shots'),son=gs(id,'shotsOn');
-    var sotp=sh&&parseFloat(sh)>0?((parseFloat(son)||0)/parseFloat(sh)*100).toFixed(1):'—';
-    r.push('<div class="dg dg4"><div class="ds"><div class="dsv">'+gs(id,'apps')+'</div><div class="dsl">APPS</div></div><div class="ds"><div class="dsv">'+mins+'</div><div class="dsl">MINS</div></div><div class="ds"><div class="dsv">'+g90+'</div><div class="dsl">G/90</div></div><div class="ds"><div class="dsv">'+sotp+'%</div><div class="dsl">SOT%</div></div></div>');
+  if (SORT !== 'default') {
+    result.sort(function(a,b) { return getSortVal(a,SORT) - getSortVal(b,SORT); });
   }
-  return r.join('');
+  return result;
 }
-function oDr(pid){
-  SEL=pid;rGrid();
-  var p=AP.find(function(x){return x.id===pid;});if(!p)return;
-  var dr=document.getElementById('dr');dr.style.setProperty('--pc',p.pc);
-  document.getElementById('dtn').textContent=p.name;
-  document.getElementById('dbd').innerHTML=
-    '<div class="dh2">'
-      +'<div class="dph"><img src="'+pUrl(p)+'" onerror="onE(this,''+p.id+'',true)"><div class="pfb2" style="color:'+p.pc+'"></div></div>'
-      +'<div class="di"><div class="din" style="color:'+p.pc+'">'+p.name+'</div><div class="dihe">'+p.nameHe+'</div><div class="dim">'+p.team+'<br>'+p.pos+' · #'+p.jersey+'<br>'+p.league+'</div></div>'
-    +'</div>'
-    +(p.sport==='nba'?nbaD(p):(p.sport==='nhl'?nhlD(p):socD(p)));
-  dr.classList.add('op');document.getElementById('ovl').classList.add('vs');
-}
-function cDr(){SEL=null;rGrid();document.getElementById('dr').classList.remove('op');document.getElementById('ovl').classList.remove('vs');}
 
-// ── compare table ────────────────────────────────────────────────────────────
-function rCmp(){
-  var w=document.getElementById('cmp');if(!w)return;
-  var ps=fp();if(!ps.length||ps.length>10){w.innerHTML='';return;}
-  var s=ps[0].sport;if(!ps.every(function(p){return p.sport===s;})){w.innerHTML='';return;}
-  var cols=s==='nba'?[{k:'pts',l:'PTS'},{k:'reb',l:'REB'},{k:'ast',l:'AST'},{k:'stl',l:'STL'},{k:'blk',l:'BLK'},{k:'gp',l:'GP'},{k:'fgp',l:'FG%'},{k:'tpp',l:'3P%'},{k:'ortg',l:'ORTG'},{k:'drtg',l:'DRTG'}]:s==='nhl'?[{k:'goals',l:'G'},{k:'assists',l:'A'},{k:'points',l:'PTS'},{k:'plusMinus',l:'+/-'},{k:'shots',l:'SOG'},{k:'hits',l:'HITS'},{k:'blocks',l:'BLK'},{k:'pim',l:'PIM'},{k:'gp',l:'GP'}]:[{k:'goals',l:'G'},{k:'assists',l:'A'},{k:'apps',l:'APP'},{k:'shots',l:'SH'},{k:'shotsOn',l:'SOT'},{k:'keyPasses',l:'KP'},{k:'dribbles',l:'DRB'},{k:'tackles',l:'TKL'},{k:'mins',l:'MIN'}];
-  var h=['<div class="cmph"><span>SIDE-BY-SIDE COMPARISON</span></div><div class="cmps"><table class="ctb"><thead><tr><th>Player</th>'];
-  cols.forEach(function(c){h.push('<th>'+c.l+'</th>');});
-  h.push('</tr></thead><tbody>');
-  ps.forEach(function(p){
-    h.push('<tr><td><div class="cpc"><div class="cpd" style="background:'+p.pc+'"></div><div>'+p.name+'<br><span style="font-size:8px;color:var(--t3)">'+p.team+'</span></div></div></td>');
-    cols.forEach(function(c){var v=gs(p.id,c.k);h.push('<td>'+(c.k==='plusMinus'?pm(v):fmt(v,(c.k==='pts'||c.k==='reb'||c.k==='ast'||c.k==='stl'||c.k==='blk'||c.k==='min'?1:0)))+'</td>');});
-    h.push('</tr>');
+function rGrid() {
+  var g = document.getElementById('grid');
+  if (!g) return;
+  var ps = filtered();
+  var sl = document.getElementById('slbl');
+  var sportName = ASP === 'all' ? 'ALL SPORTS' : ASP.toUpperCase();
+  if (sl) sl.textContent = ps.length + ' ATHLETES · ' + sportName;
+  g.innerHTML = '';
+  if (ps.length === 0) {
+    g.innerHTML = '<div class="no-res"><div style="font-size:32px;margin-bottom:8px">🔍</div><div style="font-family:Bebas Neue,sans-serif;font-size:18px;letter-spacing:1px;margin-bottom:4px">No Players Found</div><div style="font-size:9px">Try a different name, team or sport</div></div>';
+    return;
+  }
+  ps.forEach(function(p, i) {
+    var card = document.createElement('div');
+    card.className = 'cd' + (SEL === p.id ? ' sl' : '');
+    card.style.setProperty('--pc', p.pc);
+    card.style.animationDelay = (i * 0.03) + 's';
+    var purl = pUrl(p, false);
+    var flag = String.fromCodePoint(127470, 127473);
+    var imgH = '';
+    if (purl) {
+      imgH = '<img src="' + purl + '" data-pid="' + p.id + '" loading="lazy" onerror="onImgErr(this,this.dataset.pid,false)"><div class="pfb"></div>';
+    } else {
+      var jerseyNum = p.jersey || p.name.charAt(0);
+    var silSvg = '<svg class="pfb-svg" viewBox="0 0 24 24" fill="white"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>';
+    imgH = '<div class="pfb" style="display:flex">' + silSvg + '<div class="pfb-num" style="color:' + p.pc + ';text-shadow:0 0 12px ' + p.pc + '">' + jerseyNum + '</div><div class="pfb-pos">' + p.pos + '</div></div>';
+    }
+    var jnum = p.jersey ? '<span class="tg">#' + p.jersey + '</span>' : '';
+    card.innerHTML = '<div class="cb">'
+      + '<div class="ch">'
+      +   '<div class="cph">' + imgH + '<div class="fbg">' + flag + '</div></div>'
+      +   '<div class="ci">'
+      +     '<div class="cn">' + p.name + liveBadge(p.id) + '</div>'
+      +     '<div class="che">' + p.nameHe + '</div>'
+      +     '<div class="ctm">' + p.team + (p.age ? '<span style="color:var(--t3);margin-left:6px;font-size:9px;font-family:DM Mono,monospace">age '+p.age+'</span>' : '') + '</div>'
+      +     '<div class="ctgs"><span class="tg">' + p.pos + '</span>' + jnum + '<span class="tg2">' + p.league + '</span></div>'
+      +   '</div>'
+      + '</div>'
+      + liveScoreBadge(p)
+      + cardStats(p)
+      + fBadge(p.form)
+      + (p.lastMatch ? lastMatchHtml(p.lastMatch) : '')
+      + '<div class="shr">'
+      +   '<button class="sb sw" data-pid="' + p.id + '" onclick="event.stopPropagation();sWA(this.dataset.pid)">WhatsApp</button>'
+      +   '<button class="sb stg" data-pid="' + p.id + '" onclick="event.stopPropagation();sTG(this.dataset.pid)">Telegram</button>'
+      + '</div>'
+      + '</div>';
+    card.addEventListener('click', function() { openDrawer(p.id); });
+    g.appendChild(card);
   });
-  h.push('</tbody></table></div>');w.innerHTML=h.join('');
 }
 
-function rAll(){rTabs();rGrid();rCmp();}
 
-// ── INIT ─────────────────────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', function(){
-  // search — attach listener once DOM ready
+
+function lbScore(p) {
+  var sc = 0;
+  var sport = p.sport;
+  if (sport === 'nba') {
+    sc = (parseFloat(gs(p.id,'pts'))||0)*1.5 + (parseFloat(gs(p.id,'reb'))||0)*0.7 + (parseFloat(gs(p.id,'ast'))||0)*0.7;
+  } else if (sport === 'nhl') {
+    sc = (parseFloat(gs(p.id,'goals'))||0)*4 + (parseFloat(gs(p.id,'assists'))||0)*2.5;
+  } else if (sport === 'soccer') {
+    sc = (parseFloat(gs(p.id,'goals'))||0)*5 + (parseFloat(gs(p.id,'assists'))||0)*3 + (parseFloat(gs(p.id,'keyPasses'))||0)*0.5 + (parseFloat(gs(p.id,'saves'))||0)*0.8;
+  } else if (sport === 'bball' || sport === 'wbball') {
+    sc = (parseFloat(gs(p.id,'pts'))||0)*1.2 + (parseFloat(gs(p.id,'reb'))||0)*0.5 + (parseFloat(gs(p.id,'ast'))||0)*0.5;
+  } else if (sport === 'handball') {
+    sc = (parseFloat(gs(p.id,'goals'))||0)*4 + (parseFloat(gs(p.id,'assists'))||0)*2 + (parseFloat(gs(p.id,'saves'))||0)*0.8;
+  } else if (sport === 'tennis') {
+    var rank = parseInt(gs(p.id,'atp_rank')||gs(p.id,'wta_rank')||999);
+    sc = Math.max(0, 100 - rank * 0.08);
+  } else if (sport === 'winter') {
+    var wr = parseInt(gs(p.id,'world_rank')||999);
+    sc = Math.max(0, 80 - wr * 0.5) + (parseFloat(gs(p.id,'podiums'))||0)*20;
+  }
+  if (p.lastMatch && p.lastMatch.result === 'W') sc *= 1.15;
+  return sc;
+}
+
+function lbStatLine(p) {
+  var sport = p.sport;
+  if (sport === 'nba') return fmt(gs(p.id,'pts'),1)+' PPG / '+fmt(gs(p.id,'ast'),1)+' APG';
+  if (sport === 'nhl') return fi(gs(p.id,'goals'))+'G / '+fi(gs(p.id,'assists'))+'A';
+  if (sport === 'soccer') {
+    if (p.pos==='GK') return fi(gs(p.id,'saves'))+' saves';
+    return fi(gs(p.id,'goals'))+'G / '+fi(gs(p.id,'assists'))+'A';
+  }
+  if (sport==='bball'||sport==='wbball') return fmt(gs(p.id,'pts'),1)+' PPG';
+  if (sport==='handball') return fi(gs(p.id,'goals'))+'G / '+fi(gs(p.id,'assists'))+'A';
+  if (sport==='tennis') return '#'+(gs(p.id,'atp_rank')||gs(p.id,'wta_rank')||'-')+' World';
+  if (sport==='winter') return 'Rank #'+(gs(p.id,'world_rank')||'-');
+  return '';
+}
+
+function rLeaderboard() {
+  var strip = document.getElementById('lb-strip');
+  if (!strip) return;
+  var ranked = AP.slice().sort(function(a,b){ return lbScore(b) - lbScore(a); }).slice(0,7);
+  var medals = ['🥇','🥈','🥉','4','5','6','7'];
+  var row = '<div class="lb-hdr">' + String.fromCodePoint(127470,127473) + ' TOP PERFORMERS</div><div class="lb-row">';
+  ranked.forEach(function(p, i) {
+    var lmTxt = '';
+    if (p.lastMatch) {
+      var sym = p.lastMatch.result==='W' ? '✓' : p.lastMatch.result==='L' ? '✗' : '–';
+      lmTxt = sym + ' ' + p.lastMatch.score + ' vs ' + p.lastMatch.vs;
+    }
+    var shortTeam = p.team.split(' ').slice(-1)[0];
+    row += '<div class="lb-card" style="--pc:' + p.pc + '" onclick="openDrawer(\'' + p.id + '\')">'
+      + '<div class="lb-rank">' + medals[i] + '</div>'
+      + '<div class="lb-name">' + p.name + '</div>'
+      + '<div class="lb-team">' + shortTeam + '</div>'
+      + '<div class="lb-stat">' + lbStatLine(p) + '</div>'
+      + '<div class="lb-lm">' + lmTxt + '</div>'
+      + '</div>';
+  });
+  row += '</div>';
+  strip.innerHTML = row;
+}
+
+function rCmp() {
+  var w = document.getElementById('cmp');
+  if (!w) return;
+  var ps = filtered();
+  if (!ps.length || ps.length > 12) { w.innerHTML = ''; return; }
+  var s = ps[0].sport;
+  if (!ps.every(function(p) { return p.sport === s; })) { w.innerHTML = ''; return; }
+  var cols = s === 'nba'
+    ? [{k:'pts',l:'PTS'},{k:'reb',l:'REB'},{k:'ast',l:'AST'},{k:'stl',l:'STL'},{k:'blk',l:'BLK'},{k:'gp',l:'GP'},{k:'fgp',l:'FG%'}]
+    : s === 'nhl'
+    ? [{k:'goals',l:'G'},{k:'assists',l:'A'},{k:'points',l:'PTS'},{k:'plusMinus',l:'+/-'},{k:'shots',l:'SOG'},{k:'hits',l:'HITS'},{k:'gp',l:'GP'}]
+    : s === 'tennis'
+    ? [{k:'atp_rank',l:'Rank'},{k:'wins',l:'W'},{k:'losses',l:'L'},{k:'titles',l:'Ttl'}]
+    : s === 'handball'
+    ? [{k:'goals',l:'G'},{k:'assists',l:'A'},{k:'apps',l:'APP'},{k:'sevenm',l:'7M'}]
+    : s === 'winter'
+    ? [{k:'world_rank',l:'Rank'},{k:'events',l:'EVT'},{k:'podiums',l:'POD'}]
+    : [{k:'goals',l:'G'},{k:'assists',l:'A'},{k:'apps',l:'APP'},{k:'shots',l:'SH'},{k:'keyPasses',l:'KP'}];
+  var h = '<div class="cmph">SIDE-BY-SIDE COMPARISON</div><div class="cmps"><table class="ctb"><thead><tr><th>Player</th>';
+  cols.forEach(function(c) { h += '<th>'+c.l+'</th>'; });
+  h += '</tr></thead><tbody>';
+  ps.forEach(function(p) {
+    h += '<tr><td><div class="cpc"><div class="cpd" style="background:'+p.pc+'"></div><div>'+p.name+'<br><span style="font-size:8px;color:var(--t3)">'+p.team+'</span></div></div></td>';
+    cols.forEach(function(c) {
+      var v = gs(p.id, c.k);
+      h += '<td>'+(c.k==='plusMinus'?pm(v):fmt(v,c.k==='atp_rank'||c.k==='gp'||c.k==='wins'||c.k==='losses'?0:1))+'</td>';
+    });
+    h += '</tr>';
+  });
+  h += '</tbody></table></div>';
+  w.innerHTML = h;
+}
+
+function rAll() { rTabs(); rSort(); rGrid(); rCmp(); rLeaderboard(); }
+
+
+// ── LIVE ENGINE v2 ────────────────────────────────────────────────────────────
+// Detects active games via ESPN scoreboard, polls every 15s during live action
+var LIVE_GAMES = {};       // { espnEventId: {sport, status, homeTeam, awayTeam} }
+var LIVE_PLAYERS = {};     // { pid: true } - players currently in live games
+var LIVE_INTERVAL = null;
+var IDLE_INTERVAL = null;
+var POLL_LIVE_MS  = 20000;  // 20s during live action
+var POLL_IDLE_MS  = 120000; // 2min when no live games
+var IS_LIVE_MODE  = false;
+
+// ESPN scoreboard URLs by sport
+var BOARDS = {
+  nba:    'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard',
+  nhl:    'https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard',
+  soccer_epl: 'https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard',
+  soccer_bun: 'https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard',
+  soccer_mls: 'https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard',
+  soccer_rll: 'https://site.api.espn.com/apis/site/v2/sports/soccer/nld.1/scoreboard'
+};
+
+// Map each player's team to a sport board key
+var TEAM_BOARD = {};
+AP.forEach(function(p) {
+  if (p.sport === 'nba') TEAM_BOARD[p.id] = 'nba';
+  else if (p.sport === 'nhl') TEAM_BOARD[p.id] = 'nhl';
+  else if (p.sport === 'soccer') {
+    if (p.lk === 'usa.1' || p.league === 'MLS') TEAM_BOARD[p.id] = 'soccer_mls';
+    else if (p.lk === 'jpn.1') TEAM_BOARD[p.id] = null;
+    else if (p.lk === 'nld.1') TEAM_BOARD[p.id] = 'soccer_rll';
+    else if (p.lk === 'ger.1') TEAM_BOARD[p.id] = 'soccer_bun';
+    else TEAM_BOARD[p.id] = 'soccer_epl'; // default for EUR soccer
+  }
+});
+
+function setLiveUI(isLive, liveCount) {
+  var btn = document.querySelector('.lvl');
+  var msg = document.getElementById('utx-msg');
+  var prog = document.getElementById('prog-wrap');
+  if (isLive) {
+    if (btn) { btn.textContent = 'LIVE'; btn.style.background = 'rgba(239,68,68,1)'; }
+    if (prog) { prog.style.opacity = '0'; }
+    if (msg) {
+      msg.innerHTML = '<span style="color:#ef4444;animation:pulse 1s infinite">&#9679;</span> '
+        + liveCount + ' LIVE ' + (liveCount===1?'GAME':'GAMES') + ' · updating every 20s';
+    }
+  } else {
+    if (btn) { btn.textContent = 'LIVE'; btn.style.background = ''; }
+    if (msg) msg.textContent = 'No live games · ' + new Date().toLocaleTimeString();
+  }
+}
+
+// Update a single card in place without full re-render (avoids flicker)
+function updateCard(pid) {
+  var p = AP.find(function(x) { return x.id === pid; });
+  if (!p) return;
+  var cards = document.querySelectorAll('.cd');
+  cards.forEach(function(card) {
+    var btn = card.querySelector('[data-pid="' + pid + '"]');
+    if (!btn) return;
+    // Update the stat grid only
+    var sg = card.querySelector('.sg');
+    if (sg) {
+      var newStats = document.createElement('div');
+      newStats.innerHTML = cardStats(p);
+      var newSg = newStats.querySelector('.sg');
+      if (newSg) {
+        sg.innerHTML = newSg.innerHTML;
+        // Flash animation
+        sg.style.transition = 'none';
+        sg.style.background = 'rgba(239,68,68,0.12)';
+        setTimeout(function() { sg.style.transition = 'background .8s'; sg.style.background = ''; }, 50);
+      }
+    }
+    // Update live badge
+    var cn = card.querySelector('.cn');
+    if (cn) {
+      var existingBadge = cn.querySelector('.lb');
+      var newBadge = document.createElement('span');
+      newBadge.innerHTML = liveBadge(pid);
+      if (existingBadge) cn.replaceChild(newBadge.firstChild || existingBadge, existingBadge);
+    }
+  });
+  // Update drawer if open
+  if (SEL === pid) {
+    var dStats = document.getElementById('dstats');
+    if (dStats) {
+      dStats.innerHTML = drawerStats(p);
+    }
+  }
+}
+
+// Check scoreboard for live/recent games
+function checkScoreboard(boardKey) {
+  var url = BOARDS[boardKey];
+  if (!url) return Promise.resolve([]);
+  return fetch(url).then(function(r) { return r.json(); }).then(function(data) {
+    var liveEventIds = [];
+    var events = (data.events || []);
+    events.forEach(function(ev) {
+      var status = ev.status && ev.status.type && ev.status.type.state;
+      var detail = ev.status && ev.status.type && ev.status.type.detail;
+      if (status === 'in') {
+        // Game in progress!
+        var homeTeam = ev.competitions && ev.competitions[0] && ev.competitions[0].competitors
+          ? ev.competitions[0].competitors.find(function(c) { return c.homeAway === 'home'; })
+          : null;
+        var awayTeam = ev.competitions && ev.competitions[0] && ev.competitions[0].competitors
+          ? ev.competitions[0].competitors.find(function(c) { return c.homeAway === 'away'; })
+          : null;
+        LIVE_GAMES[ev.id] = {
+          sport: boardKey,
+          detail: detail || 'In Progress',
+          home: homeTeam && homeTeam.team ? homeTeam.team.displayName : '',
+          homeScore: homeTeam ? homeTeam.score : '-',
+          away: awayTeam && awayTeam.team ? awayTeam.team.displayName : '',
+          awayScore: awayTeam ? awayTeam.score : '-',
+          competitors: ev.competitions && ev.competitions[0] ? ev.competitions[0].competitors : []
+        };
+        liveEventIds.push(ev.id);
+        // Tag players in this game
+        AP.forEach(function(p) {
+          if (TEAM_BOARD[p.id] !== boardKey) return;
+          var compNames = LIVE_GAMES[ev.id].competitors.map(function(c){ return c.team ? c.team.displayName : ''; });
+          if (compNames.some(function(n){ return p.team && n && n.indexOf(p.team.split(' ').pop()) > -1; })) {
+            LIVE_PLAYERS[p.id] = true;
+          }
+        });
+      } else {
+        // Remove from live if no longer live
+        if (LIVE_GAMES[ev.id]) delete LIVE_GAMES[ev.id];
+      }
+    });
+    return liveEventIds;
+  }).catch(function() { return []; });
+}
+
+// Smart live ticker: updates only players in live games
+function liveTickUpdate() {
+  var livePlayerIds = Object.keys(LIVE_PLAYERS);
+  if (livePlayerIds.length === 0) return Promise.resolve();
+  var msg = document.getElementById('utx-msg');
+  var now = new Date().toLocaleTimeString();
+  if (msg) msg.innerHTML = '<span style="color:#ef4444">&#9679;</span> Live · ' + livePlayerIds.length + ' players · ' + now;
+  // Fetch just the live players
+  var promises = AP.filter(function(p) { return LIVE_PLAYERS[p.id]; }).map(function(p) {
+    return fetchOne(p).then(function(ok) {
+      if (ok) updateCard(p.id);
+    });
+  });
+  return Promise.all(promises);
+}
+
+// Full board check + live player update
+function checkAndUpdate() {
+  var boardChecks = Object.keys(BOARDS).map(function(key) {
+    return checkScoreboard(key);
+  });
+  return Promise.all(boardChecks).then(function() {
+    var liveGameCount = Object.keys(LIVE_GAMES).length;
+    var livePlayerCount = Object.keys(LIVE_PLAYERS).length;
+    if (liveGameCount > 0) {
+      if (!IS_LIVE_MODE) {
+        IS_LIVE_MODE = true;
+        // Switch to fast polling
+        clearInterval(IDLE_INTERVAL);
+        LIVE_INTERVAL = setInterval(liveTickUpdate, POLL_LIVE_MS);
+        setLiveUI(true, liveGameCount);
+        // Show live game banners on affected cards
+        rGrid();
+        rLeaderboard();
+      }
+      liveTickUpdate();
+    } else {
+      if (IS_LIVE_MODE) {
+        IS_LIVE_MODE = false;
+        LIVE_PLAYERS = {};
+        clearInterval(LIVE_INTERVAL);
+        setLiveUI(false, 0);
+      }
+    }
+  });
+}
+
+// Show live game score badge on card
+function liveScoreBadge(p) {
+  if (!LIVE_PLAYERS[p.id]) return '';
+  var gameInfo = null;
+  Object.values(LIVE_GAMES).forEach(function(g) {
+    if (g.sport === TEAM_BOARD[p.id]) {
+      var names = g.competitors.map(function(c){ return c.team ? c.team.displayName : ''; });
+      if (names.some(function(n){ return p.team && n && n.indexOf(p.team.split(' ').pop()) > -1; })) {
+        gameInfo = g;
+      }
+    }
+  });
+  if (!gameInfo) return '';
+  return '<div class="live-score-strip">'
+    + '<span class="live-dot">&#9679; LIVE</span>'
+    + '<span class="live-score-txt">' + gameInfo.away + ' ' + gameInfo.awayScore + ' – ' + gameInfo.homeScore + ' ' + gameInfo.home + '</span>'
+    + '<span class="live-period">' + gameInfo.detail + '</span>'
+    + '</div>';
+}
+
+// Start the live engine
+function startLiveEngine() {
+  // Initial board check immediately
+  checkAndUpdate();
+  // Schedule periodic board checks (every 60s to detect new games starting)
+  IDLE_INTERVAL = setInterval(checkAndUpdate, 60000);
+}
+
+// Init — wait for DOM
+
+// ── GAME LOG ──────────────────────────────────────────────────────────────────
+var GL_CACHE = {};
+
+function glUrl(p) {
+  if (!p.espnId) return null;
+  var base = 'https://site.web.api.espn.com/apis/common/v3/sports/';
+  if (p.sport === 'nba') return base+'basketball/nba/athletes/'+p.espnId+'/eventlog';
+  if (p.sport === 'nhl') return base+'hockey/nhl/athletes/'+p.espnId+'/eventlog';
+  if (p.sport === 'soccer') return base+'soccer/'+p.lk+'/athletes/'+p.espnId+'/eventlog';
+  return null;
+}
+
+function parseEspnLog(data, sport) {
+  var games = [];
+  try {
+    var events = (data.events && data.events.events) || [];
+    var stats  = (data.athleteStatsByGame && data.athleteStatsByGame.events) || {};
+    events.slice(0, 10).forEach(function(ev) {
+      var d     = ev.gameDate ? ev.gameDate.split('T')[0] : '';
+      var opp   = ev.opponent ? (ev.opponent.abbreviation || ev.opponent.displayName || '') : '';
+      var home  = ev.home || false;
+      var res   = ev.result || '';
+      var score = ev.score ? ev.score.displayValue : '';
+      var st    = stats[ev.id] && stats[ev.id].statistics;
+      var line  = {};
+      if (st) {
+        st.forEach(function(s) {
+          line[s.name] = s.displayValue;
+        });
+      }
+      games.push({d:d, opp:opp, home:home, res:res, score:score, line:line});
+    });
+  } catch(e) {}
+  return games;
+}
+
+function fmtDate(d) {
+  if (!d) return '';
+  var p = d.split('-');
+  if (p.length < 3) return d;
+  var mo = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return p[2]+' '+mo[parseInt(p[1],10)-1];
+}
+
+function glStatLine(game, sport, pc) {
+  var l = game.line, parts = [], shots = '';
+  if (sport === 'nba') {
+    if (l.points)   parts.push('<b>'+l.points+'</b>&thinsp;PTS');
+    if (l.rebounds) parts.push('<b>'+l.rebounds+'</b>&thinsp;REB');
+    if (l.assists)  parts.push('<b>'+l.assists+'</b>&thinsp;AST');
+    if (l.steals && l.steals !== '0') parts.push('<b>'+l.steals+'</b>&thinsp;STL');
+    if (l.blocks && l.blocks !== '0') parts.push('<b>'+l.blocks+'</b>&thinsp;BLK');
+    var fgStr = l.fieldGoalsMade && l.fieldGoalsAttempted ? l.fieldGoalsMade+'/'+l.fieldGoalsAttempted+' FG' : '';
+    var tpStr = l.threePointFieldGoalsMade && l.threePointFieldGoalsAttempted ? l.threePointFieldGoalsMade+'/'+l.threePointFieldGoalsAttempted+' 3P' : '';
+    var ftStr = l.freeThrowsMade && l.freeThrowsAttempted ? l.freeThrowsMade+'/'+l.freeThrowsAttempted+' FT' : '';
+    shots = [fgStr,tpStr,ftStr].filter(Boolean).join('&ensp;');
+    if (l.plusMinus && l.plusMinus !== '0') {
+      var pm = parseInt(l.plusMinus);
+      parts.push('<span style="color:'+(pm>0?'#22c55e':'#ef4444')+';font-size:11px">'+(pm>0?'+':'')+l.plusMinus+'</span>');
+    }
+  }
+  if (sport === 'soccer') {
+    if (l.goals)             parts.push('<b>'+l.goals+'</b>&thinsp;G');
+    if (l.assists)           parts.push('<b>'+l.assists+'</b>&thinsp;A');
+    if (l.shots)             parts.push('<b>'+l.shots+'</b>&thinsp;SH');
+    if (l.shotsOnTarget)     parts.push('<b>'+l.shotsOnTarget+'</b>&thinsp;SOT');
+    if (l.keyPasses)         parts.push('<b>'+l.keyPasses+'</b>&thinsp;KP');
+    if (l.tackles)           parts.push('<b>'+l.tackles+'</b>&thinsp;TK');
+    if (l.saves)             parts.push('<b>'+l.saves+'</b>&thinsp;SV');
+    if (l.goalsConceded)     parts.push('<b>'+l.goalsConceded+'</b>&thinsp;GA');
+    if (l.yellowCards && l.yellowCards !== '0') parts.push('<span style="background:#ca8a04;color:#fff;padding:1px 4px;border-radius:2px;font-size:10px">YC</span>');
+    if (l.passAccuracy)      shots = l.passAccuracy+'% pass';
+    if (!parts.length && l.minutesPlayed) parts.push(l.minutesPlayed+' min');
+  }
+  if (sport === 'nhl') {
+    if (l.goals)   parts.push('<b>'+l.goals+'</b>&thinsp;G');
+    if (l.assists) parts.push('<b>'+l.assists+'</b>&thinsp;A');
+    if (l.points)  parts.push('<b>'+l.points+'</b>&thinsp;PTS');
+    if (l.shots)   parts.push('<b>'+l.shots+'</b>&thinsp;SH');
+    if (l.hits && l.hits !== '0')         parts.push('<b>'+l.hits+'</b>&thinsp;HIT');
+    if (l.blockedShots && l.blockedShots !== '0') parts.push('<b>'+l.blockedShots+'</b>&thinsp;BLK');
+    if (l.saves)   parts.push('<b>'+l.saves+'</b>&thinsp;SV');
+    if (l.savePercentage) parts.push('<b>'+l.savePercentage+'</b>%');
+    if (l.plusMinus && l.plusMinus !== '0') {
+      var npm = parseInt(l.plusMinus);
+      parts.push('<span style="color:'+(npm>0?'#22c55e':'#ef4444')+'">'+(npm>0?'+':'')+l.plusMinus+'</span>');
+    }
+    shots = l.timeOnIce ? l.timeOnIce+' TOI' : '';
+  }
+  var out = '<div class="gl-main">'+(parts.length ? parts.join('<span class="gl-dot"> · </span>') : '<span style="opacity:.4">—</span>')+'</div>';
+  if (shots) out += '<div class="gl-sub">'+shots+'</div>';
+  if (l.minutesPlayed && sport !== 'soccer') out += '<div class="gl-sub">'+l.minutesPlayed+' min</div>';
+  return out;
+}
+
+function renderGameLog(pid) {
+  var p = AP.find(function(x) { return x.id === pid; });
+  var dstats = document.getElementById('dstats');
+  if (!dstats || !p) return;
+  var wrap = document.createElement('div');
+  wrap.id = 'gl-'+pid;
+  wrap.className = 'gl-wrap';
+  dstats.appendChild(wrap);
+  if (!glUrl(p)) {
+    wrap.innerHTML = '<div class="gl-hdr">LAST GAMES</div><div class="gl-empty">Game log available for ESPN-tracked players only</div>';
+    return;
+  }
+  if (GL_CACHE[pid] && Date.now()-GL_CACHE[pid].ts < 3600000) {
+    renderGLHtml(pid, GL_CACHE[pid].games);
+    return;
+  }
+  wrap.innerHTML = '<div class="gl-hdr">LAST GAMES</div><div class="gl-loading"><span class="gl-spin"></span>Loading game log…</div>';
+  fetch(glUrl(p))
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      var games = parseEspnLog(data, p.sport);
+      GL_CACHE[pid] = { ts: Date.now(), games: games };
+      renderGLHtml(pid, games);
+    })
+    .catch(function() {
+      var el = document.getElementById('gl-'+pid);
+      if (el) el.innerHTML = '<div class="gl-hdr">LAST GAMES</div><div class="gl-empty">Could not load game log</div>';
+    });
+}
+
+function renderGLHtml(pid, games) {
+  var el = document.getElementById('gl-'+pid);
+  var p  = AP.find(function(x) { return x.id === pid; });
+  if (!el || !p) return;
+  if (!games || !games.length) {
+    el.innerHTML = '<div class="gl-hdr">LAST GAMES</div><div class="gl-empty">No recent games found</div>';
+    return;
+  }
+  var rows = games.map(function(g) {
+    var rCls = g.res === 'W' ? 'gl-w' : g.res === 'L' ? 'gl-l' : 'gl-d';
+    var at   = g.home ? 'vs' : '@';
+    return '<div class="gl-row">'
+      + '<div class="gl-left">'
+      +   '<div class="gl-date">'+fmtDate(g.d)+'</div>'
+      +   '<div class="gl-match"><span class="gl-at">'+at+'</span> '+g.opp+'</div>'
+      + '</div>'
+      + '<div class="gl-mid">'+glStatLine(g, p.sport, p.pc)+'</div>'
+      + '<div class="gl-right">'
+      +   (g.res ? '<div class="gl-res '+rCls+'">'+g.res+'</div>' : '')
+      +   '<div class="gl-score">'+g.score+'</div>'
+      + '</div>'
+      + '</div>';
+  }).join('');
+  el.innerHTML = '<div class="gl-hdr">📅 LAST '+games.length+' GAMES</div>' + rows;
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  ASP = 'all'; SEL = null; SQ = '';
   var si = document.getElementById('si');
-  si.addEventListener('input', function(){
-    SQ = this.value.trim();
-    rGrid();
-    rCmp();
-  });
-  si.addEventListener('keydown', function(e){
-    if(e.key==='Escape'){this.value='';SQ='';rGrid();rCmp();}
-  });
-
-  // load cache or blank
-  if(loadC()){
-    document.getElementById('utx').className='uok';
-    document.getElementById('utx').textContent='Cache loaded — refreshing...';
+  if (si) {
+    si.addEventListener('input', function() {
+      SQ = this.value.trim();
+      rGrid();
+      rCmp();
+    });
+    si.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        this.value = '';
+        SQ = '';
+        rGrid();
+        rCmp();
+      }
+    });
   }
+  if (loadC()) {
+    var ut = document.getElementById('utx');
+    if (ut) { ut.className = 'uok'; ut.textContent = 'Cache loaded...'; }
+  }
+  showSkeletons(8);
   rAll();
   refresh();
-  setInterval(refresh, 22*3600*1000);
+  startLiveEngine();
 });
 </script>
 </body>
-</html>
+  </html>
