@@ -324,14 +324,14 @@ function pImgClass(p) {
 }
 function pUrl(p, big) {
   if (p.photoUrl) return p.photoUrl;
-  // NBA: official CDN first, ESPN combiner fallback handled in onImgErr
+  // NBA: official CDN (always works cross-origin)
   if (p.sport === 'nba' && p.nbaId) return 'https://cdn.nba.com/headshots/nba/latest/1040x760/'+p.nbaId+'.png';
+  // ESPN images: route through wsrv.nl proxy to bypass hotlink restrictions
   if (p.espnId) {
-    var sz = big ? '&w=350&h=254' : '&w=180&h=130';
-    // Use ESPN combiner which is CORS-friendly and allows hotlinking
-    if (p.sport === 'nhl') return 'https://a.espncdn.com/combiner/i?img=/i/headshots/nhl/players/full/'+p.espnId+'.png'+sz;
-    if (p.sport === 'nba') return 'https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/'+p.espnId+'.png'+sz;
-    return 'https://a.espncdn.com/combiner/i?img=/i/headshots/soccer/players/full/'+p.espnId+'.png'+sz;
+    var espnW = big ? '400' : '220';
+    var sport = p.sport === 'nhl' ? 'nhl' : p.sport === 'nba' ? 'nba' : 'soccer';
+    var espnBase = 'a.espncdn.com/i/headshots/'+sport+'/players/full/'+p.espnId+'.png';
+    return 'https://wsrv.nl/?url='+espnBase+'&w='+espnW+'&output=webp&maxage=7d';
   }
   return '';
 }
@@ -339,7 +339,7 @@ function onImgErr(img, pid, big) {
   var p = AP.find(function(x) { return x.id === pid; });
   if (!p) return;
   if (p.sport === 'nba' && img.src.indexOf('cdn.nba') > -1 && p.espnId) {
-    img.src = 'https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/'+p.espnId+'.png&w=350&h=254';
+    img.src = 'https://wsrv.nl/?url=a.espncdn.com/i/headshots/nba/players/full/'+p.espnId+'.png&w=400&output=webp';
     return;
   }
   // If it's already an ESPN combiner or ui-avatars URL that failed, go straight to silhouette
@@ -1551,6 +1551,7 @@ function updateCardPhoto(pid,url){
   document.querySelectorAll('[data-pid="'+pid+'"]').forEach(function(img){
     if(img.tagName==='IMG'){
       img.src=url;
+      img.style.display='';
       var fb=img.parentNode&&img.parentNode.querySelector('.cph2-fb,.pfb,.pfb2');
       if(fb)fb.style.display='none';
     }
