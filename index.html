@@ -284,17 +284,11 @@ body.heb .lm{border-left:none;border-right:2px solid var(--lmc)}
   </div>
 </nav>
 <div id="ubar"><span id="utx"><span id="utx-msg">Loading…</span></span></div><div id="prog-wrap"><div id="prog-bar"></div></div>
-<section id="hero">
-  <span id="hfl">&#127470;&#127473;</span>
-  <div id="hey">Season 2025-26 &middot; 9 Sports &middot; 51 Athletes</div>
-  <h1 id="hh1">ISRAEL<br><em>OVERSEAS</em></h1>
-  <p id="hdsc">Every Israeli athlete competing professionally abroad. Live stats &middot; Radar charts &middot; Form guides &middot; WhatsApp &amp; Telegram sharing.</p>
-</section>
+
 
 <div id="twr"><div id="swr"><input id="si" type="search" placeholder="Search players, teams, leagues..." autocomplete="off"></div><div id="tabs"></div></div>
 
 <div id="ticker-wrap"><div id="ticker-inner" role="marquee" aria-label="Recent results"></div></div>
-<div id="ubar"><span id="utx"><span id="utx-msg">Loading…</span></span></div><div id="prog-wrap"><div id="prog-bar"></div></div>
 <section id="hero">
   <span id="hfl">&#127470;&#127473;</span>
   <div id="hey">Season 2025-26 &middot; 9 Sports &middot; 50 Athletes</div>
@@ -703,10 +697,10 @@ function rTabs() {
   });
   TABS.forEach(function(d) {
     var cnt = counts[d.k] || 0;
-    if (d.k !== 'all' && cnt === 0) return;
+    if (d.k !== 'all' && d.k !== 'leaderboard' && d.k !== 'map' && cnt === 0) return;
     var b = document.createElement('button');
     b.className = 'tb' + (ASP === d.k ? ' a' : '');
-    b.textContent = d.l + ' (' + (d.k === 'all' ? AP.length : cnt) + ')';
+    b.textContent = (d.k === 'leaderboard' || d.k === 'map') ? d.l : d.l + ' (' + (d.k === 'all' ? AP.length : cnt) + ')';
     var c = TC[d.k] || '#fff';
     b.style.setProperty('--tba', 'rgba('+hx(c)+',.1)');
     b.style.setProperty('--tbc', c);
