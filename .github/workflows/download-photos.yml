@@ -19,28 +19,33 @@ jobs:
       - name: Download player photos from Wikipedia
         run: |
           declare -A PLAYERS
+          # Keys MUST match the player id in the AP array in index.html
+          # Soccer (15)
           PLAYERS[gloukh]="Oscar_Gloukh"
           PLAYERS[solomon]="Manor_Solomon"
-          PLAYERS[peretz]="Daniel_Peretz_(footballer)"
-          PLAYERS[khalaily]="Anan_Khalaily"
+          PLAYERS[dperetz]="Daniel_Peretz_(footballer)"
+          PLAYERS[khalili]="Anan_Khalaily"
           PLAYERS[dasa]="Eli_Dasa"
           PLAYERS[weissman]="Shon_Weissman"
           PLAYERS[glazer]="Omri_Glazer"
           PLAYERS[lemkin]="Stav_Lemkin"
           PLAYERS[nachmias]="Idan_Nachmias"
-          PLAYERS[deandavid]="Dean_David_(footballer)"
+          PLAYERS[ddavid]="Dean_David_(footballer)"
           PLAYERS[abada]="Liel_Abada"
           PLAYERS[turgeman]="Dor_Turgeman"
           PLAYERS[feingold]="Ilay_Feingold"
           PLAYERS[toklomati]="Idan_Toklomati"
-          PLAYERS[lavi]="Neta_Lavi"
-          PLAYERS[dayan]="Yonatan_Dayan_(handball_player)"
-          PLAYERS[tyus]="Alex_Tyus"
-          PLAYERS[yaakov]="Noam_Yaakov"
-          PLAYERS[oliel]="Yishai_Oliel"
-          PLAYERS[glushko]="Lina_Glushko"
-          PLAYERS[buchnik]="Mika_Buchnik"
-          PLAYERS[laron]="Maayan_Laron"
+          PLAYERS[nlavi]="Neta_Lavi"
+          # Handball
+          PLAYERS[dayan_y]="Yonatan_Dayan_(handball_player)"
+          # Basketball
+          PLAYERS[tyus_a]="Alex_Tyus"
+          PLAYERS[yaakov_n]="Noam_Yaakov"
+          # Tennis
+          PLAYERS[oliel_y]="Yishai_Oliel"
+          PLAYERS[glushko_l]="Lina_Glushko"
+          PLAYERS[buchnik_m]="Mika_Buchnik"
+          PLAYERS[laron_m]="Maayan_Laron"
 
           SUCCESS=0
           FAIL=0
@@ -59,7 +64,6 @@ jobs:
 
             echo "Looking up ${PLAYER_ID} (${WIKI_PAGE})..."
 
-            # Rate limit: wait 3 seconds between requests
             sleep 3
 
             API_URL="https://en.wikipedia.org/api/rest_v1/page/summary/${WIKI_PAGE}"
@@ -104,6 +108,14 @@ jobs:
             fi
           done
 
+          # Clean up old misnamed files from previous runs
+          for OLD in khalaily lavi tyus peretz deandavid dayan yaakov oliel glushko buchnik laron; do
+            if [ -f "images/players/${OLD}.png" ]; then
+              echo "🗑️  Removing old misnamed file: ${OLD}.png"
+              rm "images/players/${OLD}.png"
+            fi
+          done
+
           echo ""
           echo "========================================="
           echo "  Downloaded: ${SUCCESS}"
@@ -116,10 +128,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add images/players/
+          git add -A images/players/
           if git diff --cached --quiet; then
-            echo "No new images to commit"
+            echo "No changes to commit"
           else
-            git commit -m "📸 Download player photos from Wikipedia"
+            git commit -m "📸 Download player photos from Wikipedia (fixed names)"
             git push
           fi
