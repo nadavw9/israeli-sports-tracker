@@ -16,47 +16,78 @@ jobs:
       - name: Create images directory
         run: mkdir -p images/players
 
-      - name: Download Sofascore player images
+      - name: Download player photos from Wikipedia
         run: |
           declare -A PLAYERS
+          # Map player tracker ID to Wikipedia page name
           # Soccer (15)
-          PLAYERS[gloukh]=1155158
-          PLAYERS[solomon]=862223
-          PLAYERS[peretz]=1048265
-          PLAYERS[khalaily]=1403362
-          PLAYERS[dasa]=127846
-          PLAYERS[weissman]=790817
-          PLAYERS[glazer]=797083
-          PLAYERS[lemkin]=1091923
-          PLAYERS[nachmias]=827424
-          PLAYERS[deandavid]=305964
-          PLAYERS[abada]=965253
-          PLAYERS[turgeman]=1005586
-          PLAYERS[feingold]=1145681
-          PLAYERS[toklomati]=1386727
-          PLAYERS[lavi]=801830
-          # Other sports (7)
-          PLAYERS[dayan]=930748
-          PLAYERS[tyus]=861539
-          PLAYERS[yaakov]=1415687
-          PLAYERS[oliel]=195179
-          PLAYERS[glushko]=195315
-          PLAYERS[buchnik]=350124
-          PLAYERS[laron]=419640
+          PLAYERS[gloukh]="Oscar_Gloukh"
+          PLAYERS[solomon]="Manor_Solomon"
+          PLAYERS[peretz]="Daniel_Peretz_(footballer)"
+          PLAYERS[khalaily]="Anan_Khalaily"
+          PLAYERS[dasa]="Eli_Dasa"
+          PLAYERS[weissman]="Shon_Weissman"
+          PLAYERS[glazer]="Omri_Glazer"
+          PLAYERS[lemkin]="Stav_Lemkin"
+          PLAYERS[nachmias]="Idan_Nachmias"
+          PLAYERS[deandavid]="Dean_David_(footballer)"
+          PLAYERS[abada]="Liel_Abada"
+          PLAYERS[turgeman]="Dor_Turgeman"
+          PLAYERS[feingold]="Ilay_Feingold"
+          PLAYERS[toklomati]="Idan_Toklomati"
+          PLAYERS[lavi]="Neta_Lavi"
+          # Handball
+          PLAYERS[dayan]="Yonatan_Dayan_(handball_player)"
+          # Basketball
+          PLAYERS[tyus]="Alex_Tyus"
+          PLAYERS[yaakov]="Noam_Yaakov"
+          # Tennis
+          PLAYERS[oliel]="Yishai_Oliel"
+          PLAYERS[glushko]="Lina_Glushko"
+          PLAYERS[buchnik]="Mika_Buchnik"
+          PLAYERS[laron]="Maayan_Laron"
 
           SUCCESS=0
           FAIL=0
 
           for PLAYER_ID in "${!PLAYERS[@]}"; do
-            SOFASCORE_ID="${PLAYERS[$PLAYER_ID]}"
-            URL="https://api.sofascore.app/api/v1/player/${SOFASCORE_ID}/image"
+            WIKI_PAGE="${PLAYERS[$PLAYER_ID]}"
+            API_URL="https://en.wikipedia.org/api/rest_v1/page/summary/${WIKI_PAGE}"
             OUTPUT="images/players/${PLAYER_ID}.png"
 
-            echo "Downloading ${PLAYER_ID} (Sofascore ID: ${SOFASCORE_ID})..."
+            echo "Looking up ${PLAYER_ID} (${WIKI_PAGE})..."
 
+            # Get the Wikipedia summary JSON which contains thumbnail URL
+            JSON=$(curl -sL -H "User-Agent: IsraeliAthletesTracker/1.0 (github.com/nadavw9)" "$API_URL")
+
+            # Extract the original image URL (higher res than thumbnail)
+            IMG_URL=$(echo "$JSON" | python3 -c "
+          import sys, json
+          try:
+              data = json.load(sys.stdin)
+              # Try originalimage first (higher res), then thumbnail
+              if 'originalimage' in data and data['originalimage'].get('source'):
+                  print(data['originalimage']['source'])
+              elif 'thumbnail' in data and data['thumbnail'].get('source'):
+                  print(data['thumbnail']['source'])
+              else:
+                  print('')
+          except:
+              print('')
+          " 2>/dev/null)
+
+            if [ -z "$IMG_URL" ]; then
+              echo "  ❌ No image found on Wikipedia"
+              FAIL=$((FAIL + 1))
+              continue
+            fi
+
+            echo "  Found: $IMG_URL"
+
+            # Download the actual image
             HTTP_CODE=$(curl -sL -o "$OUTPUT" -w "%{http_code}" \
-              -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36" \
-              "$URL")
+              -H "User-Agent: IsraeliAthletesTracker/1.0 (github.com/nadavw9)" \
+              "$IMG_URL")
 
             FILE_SIZE=$(stat -c%s "$OUTPUT" 2>/dev/null || echo 0)
 
@@ -64,7 +95,7 @@ jobs:
               echo "  ✅ OK (${FILE_SIZE} bytes)"
               SUCCESS=$((SUCCESS + 1))
             else
-              echo "  ❌ FAILED (HTTP ${HTTP_CODE}, ${FILE_SIZE} bytes)"
+              echo "  ❌ Download failed (HTTP ${HTTP_CODE}, ${FILE_SIZE} bytes)"
               rm -f "$OUTPUT"
               FAIL=$((FAIL + 1))
             fi
@@ -76,7 +107,6 @@ jobs:
           echo "  Failed: ${FAIL}/22"
           echo "========================================="
 
-          # List what we got
           echo ""
           echo "Files in images/players/:"
           ls -la images/players/ || echo "(empty)"
@@ -89,6 +119,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No new images to commit"
           else
-            git commit -m "📸 Download player photos from Sofascore CDN"
+            git commit -m "📸 Download player photos from Wikipedia"
             git push
           fi
