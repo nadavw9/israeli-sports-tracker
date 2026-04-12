@@ -1,17 +1,17 @@
 {
-  "updatedAt": "2026-04-12T03:42:23.712Z",
+  "updatedAt": "2026-04-12T06:01:34.929Z",
   "players": {
     "zbuium": {
       "goals": 2,
       "assists": 8,
       "points": 10,
       "plusMinus": -22,
-      "pim": 27,
-      "shots": 35,
+      "pim": 29,
+      "shots": 37,
       "hits": 0,
       "blocks": 0,
-      "gp": 41,
-      "toi": "20:11"
+      "gp": 42,
+      "toi": "20:15"
     }
   }
 }
