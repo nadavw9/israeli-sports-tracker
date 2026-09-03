@@ -2,6 +2,10 @@
 
 Keep this file small. It defines how to work safely in this repository; implementation detail belongs in code, tests, or focused docs.
 
+## Global workflow pointer
+
+When available, retrieve only task-relevant topics from `/AI-Knowledge/AI_WORKFLOW_KNOWLEDGE.md`, especially Deterministic verification, UI & browser verification, Debugging & evidence preservation, Independent review, and Definition of Done. Do not copy the whole knowledge base into this repo. Local repository rules and facts remain authoritative.
+
 ## Objective
 
 Maintain a trustworthy sports-tracking product. Correctness and freshness of displayed data matter more than adding breadth quickly. Never make a UI look complete by inventing, silently defaulting, or weakening provenance.
